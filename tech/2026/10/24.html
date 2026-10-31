@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-10-24 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/10/24">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-23T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-31T09:58:04.003Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="policy">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="security">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="privacy">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="essay">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="design">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/10/24">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/10/24","path":"/tech/2026/10/24.html","title":"2026-10-24 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-10-24 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kimi-K3-1-Pro-and-K3-1-Pro-Highspeed-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Kimi K3.1 Pro and K3.1 Pro Highspeed · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Now-Google-says-it-might-use-your-Gmail-and-Google-Photos-data-to-target-ads-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Now Google says it might use your Gmail and Google Photos data to target ads · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disney-Raising-Prices-Days-After-Confirming-Ads-Will-Now-Show-Up-on-Every-Tier-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ask-HN-If-the-models-are-so-good-why-doesn%E2%80%99t-OpenAI-just-start-100-companies"><span class="nav-text">Ask HN: If the models are so good, why doesn’t OpenAI just start 100 companies?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dessa-the-most-authentic-full-duplex-speech-model-ever-built-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Dessa: the most authentic full-duplex speech model ever built · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Swedish-government-offices-to-ban-ChatGPT-and-Claude-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Swedish government offices to ban ChatGPT and Claude · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LLMs-are-making-formal-software-verification-feasible-at-a-much-larger-scale-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">LLMs are making formal software verification feasible at a much larger scale · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Local-Wikipedia-Wikipedia-but-only-for-things-a-half-hour-walk-from-you-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Local Wikipedia: Wikipedia, but only for things a half hour walk from you · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-is-weird-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Docker is weird · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Remove-pgrust-the-entry-is-cheating-per-query-kernels-and-result-caching-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Remove pgrust: the entry is cheating (per-query kernels and result caching) · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple-Music-404-Not-Found-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Apple Music 404 Not Found · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenSSL-4-1-0-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">OpenSSL 4.1.0 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-does-Fable-5-1-hide-messages-in-images-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">How does Fable 5.1 hide messages in images? · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Your-Phone-Is-About-to-Stop-Being-Yours-70-Days-Until-Lockdown-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-foolishness-of-%E2%80%9Cnatural-language-programming%E2%80%9D-1978-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The foolishness of “natural language programming” (1978) · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Job-loss-and-cortisone-mania-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Job loss and cortisone mania · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Today-we-hacked-what-we%E2%80%99d-set-out-to-hack-the-iPhone-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Today, we hacked what we’d set out to hack: the iPhone · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Investor-owned-utilities-charge-23-more-for-electricity-than-public-providers-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Investor-owned utilities charge 23% more for electricity than public providers · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dutch-government-had-hacked-into-Jared-Kushner%E2%80%99s-phone-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Dutch government had hacked into Jared Kushner’s phone · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#eMudhra-ignored-Mozilla-Root-investigation-deadline-blames-social-media-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">eMudhra ignored Mozilla Root investigation deadline; blames social media · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">30</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/10/24">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-10-24 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-10-24 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-10-24 07:00  " itemprop="dateCreated datePublished" datetime="2026-10-24T07:00:00+08:00">2026-10-24 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://blog.calif.io/p/iphone">Today, we hacked what we’d set out to hack: the iPhone</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.kimi.ai/blog/kimi-k3-1-pro">Kimi K3.1 Pro and K3.1 Pro Highspeed</a></li>
+<li><a target="_blank" rel="noopener" href="https://music.apple.com/this-url-doesnt-exist">Apple Music 404 Not Found</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="Kimi-K3-1-Pro-and-K3-1-Pro-Highspeed-·-讨论"><a href="#Kimi-K3-1-Pro-and-K3-1-Pro-Highspeed-·-讨论" class="headerlink" title="Kimi K3.1 Pro and K3.1 Pro Highspeed · 讨论"></a><a target="_blank" rel="noopener" href="https://www.kimi.ai/blog/kimi-k3-1-pro">Kimi K3.1 Pro and K3.1 Pro Highspeed</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50212065">讨论</a></h3><p>713 分 · 455 条评论 · kimi.ai · Hacker News</p>
+<p>Kimi K3.1 Pro发布，百万上下文窗口</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Now-Google-says-it-might-use-your-Gmail-and-Google-Photos-data-to-target-ads-·-讨论"><a href="#Now-Google-says-it-might-use-your-Gmail-and-Google-Photos-data-to-target-ads-·-讨论" class="headerlink" title="Now Google says it might use your Gmail and Google Photos data to target ads · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update">Now Google says it might use your Gmail and Google Photos data to target ads</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50214218">讨论</a></h3><p>271 分 · 139 条评论 · theverge.com · Hacker News</p>
+<p>谷歌新条款允许利用Gmail和照片数据投放个性化广告</p>
+<p><code>#ai</code> <code>#privacy</code></p>
+<h3 id="Disney-Raising-Prices-Days-After-Confirming-Ads-Will-Now-Show-Up-on-Every-Tier-·-讨论"><a href="#Disney-Raising-Prices-Days-After-Confirming-Ads-Will-Now-Show-Up-on-Every-Tier-·-讨论" class="headerlink" title="Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier · 讨论"></a><a target="_blank" rel="noopener" href="https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/">Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50205934">讨论</a></h3><p>415 分 · 434 条评论 · tvfandomlounge.com · Hacker News</p>
+<p>迪士尼确认所有档位将显示广告并提价</p>
+<h3 id="Ask-HN-If-the-models-are-so-good-why-doesn’t-OpenAI-just-start-100-companies"><a href="#Ask-HN-If-the-models-are-so-good-why-doesn’t-OpenAI-just-start-100-companies" class="headerlink" title="Ask HN: If the models are so good, why doesn’t OpenAI just start 100 companies?"></a><a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50200997">Ask HN: If the models are so good, why doesn’t OpenAI just start 100 companies?</a></h3><p>593 分 · 661 条评论 · news.ycombinator.com · Hacker News</p>
+<p>质疑OpenAI为何不直接创办100家公司应用模型</p>
+<p><code>#ai</code> <code>#policy</code></p>
+<h3 id="Dessa-the-most-authentic-full-duplex-speech-model-ever-built-·-讨论"><a href="#Dessa-the-most-authentic-full-duplex-speech-model-ever-built-·-讨论" class="headerlink" title="Dessa: the most authentic full-duplex speech model ever built · 讨论"></a><a target="_blank" rel="noopener" href="https://block.xyz/dessa">Dessa: the most authentic full-duplex speech model ever built</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50213925">讨论</a></h3><p>225 分 · 96 条评论 · block.xyz · Hacker News</p>
+<p>Dessa发布全双语音对话模型</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Swedish-government-offices-to-ban-ChatGPT-and-Claude-·-讨论"><a href="#Swedish-government-offices-to-ban-ChatGPT-and-Claude-·-讨论" class="headerlink" title="Swedish government offices to ban ChatGPT and Claude · 讨论"></a><a target="_blank" rel="noopener" href="https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet">Swedish government offices to ban ChatGPT and Claude</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50207405">讨论</a></h3><p>315 分 · 117 条评论 · sverigesradio.se · Hacker News</p>
+<p>瑞典政府办公室禁止使用ChatGPT和Claude</p>
+<h3 id="LLMs-are-making-formal-software-verification-feasible-at-a-much-larger-scale-·-讨论"><a href="#LLMs-are-making-formal-software-verification-feasible-at-a-much-larger-scale-·-讨论" class="headerlink" title="LLMs are making formal software verification feasible at a much larger scale · 讨论"></a><a target="_blank" rel="noopener" href="https://www.anthropic.com/research/formal-verification">LLMs are making formal software verification feasible at a much larger scale</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50202217">讨论</a></h3><p>440 分 · 284 条评论 · anthropic.com · Hacker News</p>
+<p>LLM助力大规模正式软件验证，发现汇编级漏洞</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Local-Wikipedia-Wikipedia-but-only-for-things-a-half-hour-walk-from-you-·-讨论"><a href="#Local-Wikipedia-Wikipedia-but-only-for-things-a-half-hour-walk-from-you-·-讨论" class="headerlink" title="Local Wikipedia: Wikipedia, but only for things a half hour walk from you · 讨论"></a><a target="_blank" rel="noopener" href="https://edjefferson.com/localwiki/">Local Wikipedia: Wikipedia, but only for things a half hour walk from you</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50202285">讨论</a></h3><p>1240 分 · 225 条评论 · edjefferson.com · Hacker News</p>
+<p>本地维基百科，仅收录步行半小时范围内条目</p>
+<p><code>#oss</code></p>
+<h3 id="Docker-is-weird-·-讨论"><a href="#Docker-is-weird-·-讨论" class="headerlink" title="Docker is weird · 讨论"></a><a target="_blank" rel="noopener" href="https://codeandcake.dev/posts/2026-10-22-docker-is-weird">Docker is weird</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50202681">讨论</a></h3><p>824 分 · 347 条评论 · codeandcake.dev · Hacker News</p>
+<p>作者自制容器运行时，揭秘Docker实现原理</p>
+<p><code>#oss</code></p>
+<h3 id="Remove-pgrust-the-entry-is-cheating-per-query-kernels-and-result-caching-·-讨论"><a href="#Remove-pgrust-the-entry-is-cheating-per-query-kernels-and-result-caching-·-讨论" class="headerlink" title="Remove pgrust: the entry is cheating (per-query kernels and result caching) · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/ClickHouse/ClickBench/pull/2165">Remove pgrust: the entry is cheating (per-query kernels and result caching)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50205816">讨论</a></h3><p>182 分 · 142 条评论 · github.com · Hacker News</p>
+<p>要求移除ClickBench pgrust条目，称其作弊</p>
+<p><code>#oss</code> <code>#release</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Apple-Music-404-Not-Found-·-讨论"><a href="#Apple-Music-404-Not-Found-·-讨论" class="headerlink" title="Apple Music 404 Not Found · 讨论"></a><a target="_blank" rel="noopener" href="https://music.apple.com/this-url-doesnt-exist">Apple Music 404 Not Found</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50207910">讨论</a></h3><p>583 分 · 190 条评论 · music.apple.com · Hacker News</p>
+<p>Apple Music出现404错误</p>
+<p><code>#infra</code></p>
+<h3 id="OpenSSL-4-1-0-·-讨论"><a href="#OpenSSL-4-1-0-·-讨论" class="headerlink" title="OpenSSL 4.1.0 · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/openssl/openssl/releases/tag/openssl-4.1.0">OpenSSL 4.1.0</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50208099">讨论</a></h3><p>180 分 · 62 条评论 · github.com · Hacker News</p>
+<p>OpenSSL 4.1.0发布，新增多项优化与构建目标</p>
+<p><code>#infra</code> <code>#linux</code></p>
+<h3 id="How-does-Fable-5-1-hide-messages-in-images-·-讨论"><a href="#How-does-Fable-5-1-hide-messages-in-images-·-讨论" class="headerlink" title="How does Fable 5.1 hide messages in images? · 讨论"></a><a target="_blank" rel="noopener" href="https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images">How does Fable 5.1 hide messages in images?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50201445">讨论</a></h3><p>195 分 · 70 条评论 · lesswrong.com · Hacker News</p>
+<p>Fable 5.1在图片中隐藏信息的方法</p>
+<p><code>#infra</code></p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="Your-Phone-Is-About-to-Stop-Being-Yours-70-Days-Until-Lockdown-·-讨论"><a href="#Your-Phone-Is-About-to-Stop-Being-Yours-70-Days-Until-Lockdown-·-讨论" class="headerlink" title="Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown · 讨论"></a><a target="_blank" rel="noopener" href="https://keepandroidopen.org/">Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50208558">讨论</a></h3><p>480 分 · 333 条评论 · keepandroidopen.org · Hacker News</p>
+<p>谷歌2027年将强制安卓开发者注册并交身份证</p>
+<p><code>#essay</code></p>
+<h3 id="The-foolishness-of-“natural-language-programming”-1978-·-讨论"><a href="#The-foolishness-of-“natural-language-programming”-1978-·-讨论" class="headerlink" title="The foolishness of “natural language programming” (1978) · 讨论"></a><a target="_blank" rel="noopener" href="https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html">The foolishness of “natural language programming” (1978)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50203161">讨论</a></h3><p>358 分 · 249 条评论 · cs.utexas.edu · Hacker News</p>
+<p>迪杰斯特拉批评自然语言编程的愚蠢</p>
+<p><code>#essay</code></p>
+<h3 id="Job-loss-and-cortisone-mania-·-讨论"><a href="#Job-loss-and-cortisone-mania-·-讨论" class="headerlink" title="Job loss and cortisone mania · 讨论"></a><a target="_blank" rel="noopener" href="https://tilschuenemann.de/job-loss-cortisone-mania">Job loss and cortisone mania</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50206840">讨论</a></h3><p>168 分 · 113 条评论 · tilschuenemann.de · Hacker News</p>
+<p>作者被裁员后患自身免疫疾病</p>
+<p><code>#essay</code></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Today-we-hacked-what-we’d-set-out-to-hack-the-iPhone-·-讨论"><a href="#Today-we-hacked-what-we’d-set-out-to-hack-the-iPhone-·-讨论" class="headerlink" title="Today, we hacked what we’d set out to hack: the iPhone · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.calif.io/p/iphone">Today, we hacked what we’d set out to hack: the iPhone</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50211474">讨论</a></h3><p>742 分 · 500 条评论 · blog.calif.io · Hacker News</p>
+<p>Hexacon演示iPhone多项黑客攻击成果</p>
+<p><code>#design</code></p>
+<h3 id="Investor-owned-utilities-charge-23-more-for-electricity-than-public-providers-·-讨论"><a href="#Investor-owned-utilities-charge-23-more-for-electricity-than-public-providers-·-讨论" class="headerlink" title="Investor-owned utilities charge 23% more for electricity than public providers · 讨论"></a><a target="_blank" rel="noopener" href="https://www.kadoa.com/energy-prices/insights/investor-owned-utilities">Investor-owned utilities charge 23% more for electricity than public providers</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50208837">讨论</a></h3><p>526 分 · 384 条评论 · kadoa.com · Hacker News</p>
+<p>投资者电力公司电价比公共机构高23%</p>
+<h3 id="Dutch-government-had-hacked-into-Jared-Kushner’s-phone-·-讨论"><a href="#Dutch-government-had-hacked-into-Jared-Kushner’s-phone-·-讨论" class="headerlink" title="Dutch government had hacked into Jared Kushner’s phone · 讨论"></a><a target="_blank" rel="noopener" href="https://twitter.com/jaredkushner/status/2113376217415958767">Dutch government had hacked into Jared Kushner’s phone</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50206914">讨论</a></h3><p>288 分 · 188 条评论 · twitter.com · Hacker News</p>
+<p>荷兰政府曾入侵贾里德·库什纳手机</p>
+<p><code>#security</code></p>
+<h3 id="eMudhra-ignored-Mozilla-Root-investigation-deadline-blames-social-media-·-讨论"><a href="#eMudhra-ignored-Mozilla-Root-investigation-deadline-blames-social-media-·-讨论" class="headerlink" title="eMudhra ignored Mozilla Root investigation deadline; blames social media · 讨论"></a><a target="_blank" rel="noopener" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2083449">eMudhra ignored Mozilla Root investigation deadline; blames social media</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50210067">讨论</a></h3><p>193 分 · 152 条评论 · bugzilla.mozilla.org · Hacker News</p>
+<p>eMudhra忽略Mozilla调查期限并归咎社交媒体</p>
+<p><code>#security</code></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/policy/" rel="tag"># policy</a>
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/privacy/" rel="tag"># privacy</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/design/" rel="tag"># design</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/10/24-morning" rel="prev" title="2026-10-24 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-10-24 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/10/24-evening" rel="next" title="2026-10-24 · 财经晚报">
+                  2026-10-24 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

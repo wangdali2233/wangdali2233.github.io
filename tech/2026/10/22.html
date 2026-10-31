@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-10-22 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/10/22">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-21T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-31T09:58:04.003Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="essay">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/10/22">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/10/22","path":"/tech/2026/10/22.html","title":"2026-10-22 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-10-22 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Compromised-LiteLLM-1-107-0-on-PyPI-Installs-a-Credential-Stealer-and-Backdoor-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP2Shell-AI-uncovers-critical-RCE-in-PHP-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">PHP2Shell: AI uncovers critical RCE in PHP · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Railway-Security-Disclosure-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Railway Security Disclosure · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Claude-Duet-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Claude Duet · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-models-are-coming-to-Google-Cloud-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">OpenAI models are coming to Google Cloud · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Patch-the-Planet-global-response-coordination-as-agents-uncover-vulnerabilities-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Patch the Planet: global response coordination as agents uncover vulnerabilities · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Good-type-against-all-odds-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Good type against all odds · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Using-thousands-of-AI-agents-to-uncover-new-leads-in-biological-data-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Using thousands of AI agents to uncover new leads in biological data · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-8-2-35-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">PHP 8.2.35 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Today%E2%80%99s-PHP-security-release-and-how-we%E2%80%99re-strengthening-security-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Today’s PHP security release, and how we’re strengthening security · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Eight-Bits-of-Trust-eMudhra%E2%80%99s-CA-keys-cracked-in-milliseconds-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Eight Bits of Trust: eMudhra’s CA keys cracked in milliseconds · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitLab-Critical-Patch-Release-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">GitLab Critical Patch Release · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google%E2%80%99s-Rust-Style-Guide-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Google’s Rust Style Guide · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-now-beats-Rust-on-WASM-size-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">C# now beats Rust on WASM size · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-web-runtimes-CVE-2026-109618-and-CVE-2026-109619-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">PHP web runtimes (CVE-2026-109618 and CVE-2026-109619) · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-No-Kings-Takedown-Is-Why-You-Shouldn%E2%80%99t-Rent-Your-Megaphone-from-Zuck-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The No Kings Takedown Is Why You Shouldn’t Rent Your Megaphone from Zuck · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#EA-is-shutting-down-BioWare-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">EA is shutting down BioWare · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-1-5%C2%B0C-goal-of-the-Paris-Agreement-is-no-longer-viable-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The 1.5°C goal of the Paris Agreement is no longer viable · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Meta-ordered-to-pay-25B-penalty-in-New-Mexico-Cambridge-Analytica-case-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Security-advisory-Critical-remote-code-execution-vulnerabilities-update-now-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Security advisory: Critical remote code execution vulnerabilities, update now · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">30</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/10/22">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-10-22 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-10-22 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-10-22 07:00  " itemprop="dateCreated datePublished" datetime="2026-10-22T07:00:00+08:00">2026-10-22 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/php/php-src/releases/tag/php-8.2.35">PHP 8.2.35</a></li>
+<li><a target="_blank" rel="noopener" href="https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/">Today’s PHP security release, and how we’re strengthening security</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware">EA is shutting down BioWare</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="Compromised-LiteLLM-1-107-0-on-PyPI-Installs-a-Credential-Stealer-and-Backdoor-·-讨论"><a href="#Compromised-LiteLLM-1-107-0-on-PyPI-Installs-a-Credential-Stealer-and-Backdoor-·-讨论" class="headerlink" title="Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor · 讨论"></a><a target="_blank" rel="noopener" href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50181114">讨论</a></h3><p>434 分 · 141 条评论 · safedep.io · Hacker News</p>
+<p>PyPI上LiteLLM 1.107.0被植入窃密后门</p>
+<h3 id="PHP2Shell-AI-uncovers-critical-RCE-in-PHP-·-讨论"><a href="#PHP2Shell-AI-uncovers-critical-RCE-in-PHP-·-讨论" class="headerlink" title="PHP2Shell: AI uncovers critical RCE in PHP · 讨论"></a><a target="_blank" rel="noopener" href="https://www.wiz.io/blog/php2shell-php-rce">PHP2Shell: AI uncovers critical RCE in PHP</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50180836">讨论</a></h3><p>433 分 · 172 条评论 · wiz.io · Hacker News</p>
+<p>Wiz发现PHP核心多个严重RCE漏洞</p>
+<h3 id="Railway-Security-Disclosure-·-讨论"><a href="#Railway-Security-Disclosure-·-讨论" class="headerlink" title="Railway Security Disclosure · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st">Railway Security Disclosure</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50188228">讨论</a></h3><p>299 分 · 145 条评论 · blog.railway.com · Hacker News</p>
+<p>Railway环境变量疑遭未授权访问泄露</p>
+<h3 id="Claude-Duet-·-讨论"><a href="#Claude-Duet-·-讨论" class="headerlink" title="Claude Duet · 讨论"></a><a target="_blank" rel="noopener" href="https://claude.com/product/claude-duet">Claude Duet</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50186037">讨论</a></h3><p>313 分 · 271 条评论 · claude.com · Hacker News</p>
+<p>Anthropic推出主动型代理Claude Duet</p>
+<h3 id="OpenAI-models-are-coming-to-Google-Cloud-·-讨论"><a href="#OpenAI-models-are-coming-to-Google-Cloud-·-讨论" class="headerlink" title="OpenAI models are coming to Google Cloud · 讨论"></a><a target="_blank" rel="noopener" href="https://openai.com/index/openai-models-google-cloud/">OpenAI models are coming to Google Cloud</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50180079">讨论</a></h3><p>238 分 · 99 条评论 · openai.com · Hacker News</p>
+<p>OpenAI模型将登陆Google Cloud</p>
+<h3 id="Patch-the-Planet-global-response-coordination-as-agents-uncover-vulnerabilities-·-讨论"><a href="#Patch-the-Planet-global-response-coordination-as-agents-uncover-vulnerabilities-·-讨论" class="headerlink" title="Patch the Planet: global response coordination as agents uncover vulnerabilities · 讨论"></a><a target="_blank" rel="noopener" href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">Patch the Planet: global response coordination as agents uncover vulnerabilities</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50181175">讨论</a></h3><p>234 分 · 160 条评论 · openai.com · Hacker News</p>
+<p>呼吁全球协作修补代理发现的漏洞</p>
+<h3 id="Good-type-against-all-odds-·-讨论"><a href="#Good-type-against-all-odds-·-讨论" class="headerlink" title="Good type against all odds · 讨论"></a><a target="_blank" rel="noopener" href="https://unsung.aresluna.org/good-type-against-all-odds/">Good type against all odds</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50175059">讨论</a></h3><p>197 分 · 20 条评论 · unsung.aresluna.org · Hacker News</p>
+<p>解释屏幕滚动导致文字看似斜体的现象</p>
+<h3 id="Using-thousands-of-AI-agents-to-uncover-new-leads-in-biological-data-·-讨论"><a href="#Using-thousands-of-AI-agents-to-uncover-new-leads-in-biological-data-·-讨论" class="headerlink" title="Using thousands of AI agents to uncover new leads in biological data · 讨论"></a><a target="_blank" rel="noopener" href="https://openai.com/index/scaling-ai-research-for-complex-biological-data/">Using thousands of AI agents to uncover new leads in biological data</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50180752">讨论</a></h3><p>134 分 · 84 条评论 · openai.com · Hacker News</p>
+<p>用数千AI代理挖掘生物数据新线索</p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="PHP-8-2-35-·-讨论"><a href="#PHP-8-2-35-·-讨论" class="headerlink" title="PHP 8.2.35 · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/php/php-src/releases/tag/php-8.2.35">PHP 8.2.35</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50180873">讨论</a></h3><p>969 分 · 533 条评论 · github.com · Hacker News</p>
+<p>PHP 8.2.35安全版修复两个严重漏洞</p>
+<h3 id="Today’s-PHP-security-release-and-how-we’re-strengthening-security-·-讨论"><a href="#Today’s-PHP-security-release-and-how-we’re-strengthening-security-·-讨论" class="headerlink" title="Today’s PHP security release, and how we’re strengthening security · 讨论"></a><a target="_blank" rel="noopener" href="https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/">Today’s PHP security release, and how we’re strengthening security</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50182987">讨论</a></h3><p>677 分 · 335 条评论 · thephp.foundation · Hacker News</p>
+<p>PHP基金会说明漏洞修复与安全机制改进</p>
+<h3 id="Eight-Bits-of-Trust-eMudhra’s-CA-keys-cracked-in-milliseconds-·-讨论"><a href="#Eight-Bits-of-Trust-eMudhra’s-CA-keys-cracked-in-milliseconds-·-讨论" class="headerlink" title="Eight Bits of Trust: eMudhra’s CA keys cracked in milliseconds · 讨论"></a><a target="_blank" rel="noopener" href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/">Eight Bits of Trust: eMudhra’s CA keys cracked in milliseconds</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50177916">讨论</a></h3><p>842 分 · 403 条评论 · scotthelme.co.uk · Hacker News</p>
+<p>eMudhra八个中间证书私钥被轻易破解</p>
+<h3 id="GitLab-Critical-Patch-Release-·-讨论"><a href="#GitLab-Critical-Patch-Release-·-讨论" class="headerlink" title="GitLab Critical Patch Release · 讨论"></a><a target="_blank" rel="noopener" href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">GitLab Critical Patch Release</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50185869">讨论</a></h3><p>245 分 · 58 条评论 · docs.gitlab.com · Hacker News</p>
+<p>GitLab发布多个版本的关键安全补丁</p>
+<h3 id="Google’s-Rust-Style-Guide-·-讨论"><a href="#Google’s-Rust-Style-Guide-·-讨论" class="headerlink" title="Google’s Rust Style Guide · 讨论"></a><a target="_blank" rel="noopener" href="https://google.github.io/styleguide/rustguide.html">Google’s Rust Style Guide</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50186010">讨论</a></h3><p>200 分 · 116 条评论 · google.github.io · Hacker News</p>
+<p>Google发布Rust代码风格指南</p>
+<h3 id="C-now-beats-Rust-on-WASM-size-·-讨论"><a href="#C-now-beats-Rust-on-WASM-size-·-讨论" class="headerlink" title="C# now beats Rust on WASM size · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/zion-sati/NetWasm">C# now beats Rust on WASM size</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50175510">讨论</a></h3><p>153 分 · 102 条评论 · github.com · Hacker News</p>
+<p>C#编译WASM体积现已小于Rust</p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="PHP-web-runtimes-CVE-2026-109618-and-CVE-2026-109619-·-讨论"><a href="#PHP-web-runtimes-CVE-2026-109618-and-CVE-2026-109619-·-讨论" class="headerlink" title="PHP web runtimes (CVE-2026-109618 and CVE-2026-109619) · 讨论"></a><a target="_blank" rel="noopener" href="https://aws.amazon.com/security/security-bulletins/2026-143-aws/">PHP web runtimes (CVE-2026-109618 and CVE-2026-109619)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50187708">讨论</a></h3><p>107 分 · 26 条评论 · aws.amazon.com · Hacker News</p>
+<p>AWS发布PHP运行时漏洞安全公告</p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="The-No-Kings-Takedown-Is-Why-You-Shouldn’t-Rent-Your-Megaphone-from-Zuck-·-讨论"><a href="#The-No-Kings-Takedown-Is-Why-You-Shouldn’t-Rent-Your-Megaphone-from-Zuck-·-讨论" class="headerlink" title="The No Kings Takedown Is Why You Shouldn’t Rent Your Megaphone from Zuck · 讨论"></a><a target="_blank" rel="noopener" href="https://www.techdirt.com/2026/10/20/accident-or-not-the-no-kings-takedown-is-why-you-shouldnt-rent-your-megaphone-from-zuck/">The No Kings Takedown Is Why You Shouldn’t Rent Your Megaphone from Zuck</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50181137">讨论</a></h3><p>493 分 · 475 条评论 · techdirt.com · Hacker News</p>
+<p>批评Meta借广告垄断扩张聊天机器人</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="EA-is-shutting-down-BioWare-·-讨论"><a href="#EA-is-shutting-down-BioWare-·-讨论" class="headerlink" title="EA is shutting down BioWare · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware">EA is shutting down BioWare</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50184586">讨论</a></h3><p>518 分 · 312 条评论 · theverge.com · Hacker News</p>
+<p>EA关闭BioWare并裁员约400人</p>
+<h3 id="The-1-5°C-goal-of-the-Paris-Agreement-is-no-longer-viable-·-讨论"><a href="#The-1-5°C-goal-of-the-Paris-Agreement-is-no-longer-viable-·-讨论" class="headerlink" title="The 1.5°C goal of the Paris Agreement is no longer viable · 讨论"></a><a target="_blank" rel="noopener" href="https://unric.org/en/unep-emissions-gap-report-2026-1-5-degree-overshoot/">The 1.5°C goal of the Paris Agreement is no longer viable</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50177911">讨论</a></h3><p>614 分 · 748 条评论 · unric.org · Hacker News</p>
+<p>UNEP报告称1.5°C温控目标已不可行</p>
+<h3 id="Meta-ordered-to-pay-25B-penalty-in-New-Mexico-Cambridge-Analytica-case-·-讨论"><a href="#Meta-ordered-to-pay-25B-penalty-in-New-Mexico-Cambridge-Analytica-case-·-讨论" class="headerlink" title="Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case · 讨论"></a><a target="_blank" rel="noopener" href="https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html">Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50184820">讨论</a></h3><p>368 分 · 225 条评论 · cnbc.com · Hacker News</p>
+<p>Meta因剑桥分析案被判罚250亿美元</p>
+<h3 id="Security-advisory-Critical-remote-code-execution-vulnerabilities-update-now-·-讨论"><a href="#Security-advisory-Critical-remote-code-execution-vulnerabilities-update-now-·-讨论" class="headerlink" title="Security advisory: Critical remote code execution vulnerabilities, update now · 讨论"></a><a target="_blank" rel="noopener" href="https://www.php.net/archive/2026.php#2026-10-21-5">Security advisory: Critical remote code execution vulnerabilities, update now</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50172041">讨论</a></h3><p>1506 分 · 650 条评论 · php.net · Hacker News</p>
+<p>PHP发布修复两个未授权RCE漏洞的更新</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/10/22-morning" rel="prev" title="2026-10-22 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-10-22 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/10/22-evening" rel="next" title="2026-10-22 · 财经晚报">
+                  2026-10-22 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
