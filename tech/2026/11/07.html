@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-07 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/07">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-06T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-07T10:42:02.608Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="business">
+<meta property="article:tag" content="security">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="essay">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="design">
+<meta property="article:tag" content="web">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/07">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/07","path":"/tech/2026/11/07.html","title":"2026-11-07 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-07 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-Jev-that-can-ask-Opus-for-help-gives-Opus-accuracy-at-4x-lower-cost-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Claude-Code-sends-your-email-address-to-websites-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Claude Code sends your email address to websites · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gemini-Omni-1-2-Flash-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Gemini Omni 1.2 Flash · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cuban-Facebook-knowingly-runs-AI-deepfake-scam-ads-docs-say-16B-fraud-revenue-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anthropic-IPO-buyers-see-valuation-as-low-as-1-1T-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Anthropic IPO buyers see valuation as low as $1.1T · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AI-is-dramatically-accelerating-AI-research-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AI is dramatically accelerating AI research · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Inkling-2-Small-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Inkling 2 Small · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Blender%E2%80%99s-UI-and-Runtime-Much-Faster-Than-GPUI-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Blender’s UI and Runtime: Much Faster Than GPUI · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pwn-college-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Pwn.college · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#First-steps-in-bare-metal-programming-using-UEFI-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">First steps in bare-metal programming using UEFI · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kugelblitz-%E2%80%93-Mac-Native-Google-Earth-Alternative-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Kugelblitz – Mac-Native Google Earth Alternative · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ask-HN-What-in-the-world-is-taking-Ubuntu-so-long"><span class="nav-text">Ask HN: What in the world is taking Ubuntu so long?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rune-A-native-GPU-rendered-Rust-UI-framework-for-macOS-Windows-Linux-and-web-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Firecracker-VM-Escape-PwnEscape-Part-2-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Firecracker VM Escape: PwnEscape Part 2 · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#From-Linux-to-Wikipedia-How-Volunteers-Build-the-Internet-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">From Linux to Wikipedia: How Volunteers Build the Internet · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I-struggle-to-believe-that-AI-R-D-is-ingenious-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">I struggle to believe that AI R&amp;D is ingenious · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tesla-to-wind-down-Cybertruck-production-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Tesla to wind down Cybertruck production · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dutch-%E2%80%98idealist%E2%80%99-bank-ASN-blocks-non-Google-Android-including-GrapheneOS-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Dutch ‘idealist’ bank ASN blocks non-Google Android, including GrapheneOS · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deus-Ex-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Deus Ex · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Britain-to-make-salary-disclosure-in-job-ads-mandatory-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Britain to make salary disclosure in job ads mandatory · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/07">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-07 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-07 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-07 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-07T07:00:00+08:00">2026-11-07 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源，覆盖 11-06 07:00 → 11-07 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817">Tesla to wind down Cybertruck production</a></li>
+<li><a target="_blank" rel="noopener" href="https://hightouch.com/blog/llm-judges-identity-resolution">A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105">Dutch ‘idealist’ bank ASN blocks non-Google Android, including GrapheneOS</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="A-Jev-that-can-ask-Opus-for-help-gives-Opus-accuracy-at-4x-lower-cost-·-讨论"><a href="#A-Jev-that-can-ask-Opus-for-help-gives-Opus-accuracy-at-4x-lower-cost-·-讨论" class="headerlink" title="A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost · 讨论"></a><a target="_blank" rel="noopener" href="https://hightouch.com/blog/llm-judges-identity-resolution">A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50397429">讨论</a></h3><p>352 分 · 78 条评论 · hightouch.com · Hacker News</p>
+<p>Hightouch enables sending messages to Opus, achieving four times accuracy at lower cost.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Claude-Code-sends-your-email-address-to-websites-·-讨论"><a href="#Claude-Code-sends-your-email-address-to-websites-·-讨论" class="headerlink" title="Claude Code sends your email address to websites · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/anthropics/claude-code/issues/107757">Claude Code sends your email address to websites</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50385272">讨论</a></h3><p>1554 分 · 493 条评论 · github.com · Hacker News</p>
+<p>Gemini Omni 1.2 Flash is a Google DeepMind AI model.</p>
+<p><code>#ai</code> <code>#privacy</code></p>
+<h3 id="Gemini-Omni-1-2-Flash-·-讨论"><a href="#Gemini-Omni-1-2-Flash-·-讨论" class="headerlink" title="Gemini Omni 1.2 Flash · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/">Gemini Omni 1.2 Flash</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50392118">讨论</a></h3><p>300 分 · 220 条评论 · blog.google · Hacker News</p>
+<p>Cuban says Facebook knowingly runs AI deepfake scam ads generating $16B.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Cuban-Facebook-knowingly-runs-AI-deepfake-scam-ads-docs-say-16B-fraud-revenue-·-讨论"><a href="#Cuban-Facebook-knowingly-runs-AI-deepfake-scam-ads-docs-say-16B-fraud-revenue-·-讨论" class="headerlink" title="Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue · 讨论"></a><a target="_blank" rel="noopener" href="https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html">Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50385870">讨论</a></h3><p>496 分 · 223 条评论 · finance.yahoo.com · Hacker News</p>
+<p>Anthropic IPO buyers value the company at as low as $1.1 trillion.</p>
+<p><code>#ai</code> <code>#business</code></p>
+<h3 id="Anthropic-IPO-buyers-see-valuation-as-low-as-1-1T-·-讨论"><a href="#Anthropic-IPO-buyers-see-valuation-as-low-as-1-1T-·-讨论" class="headerlink" title="Anthropic IPO buyers see valuation as low as $1.1T · 讨论"></a><a target="_blank" rel="noopener" href="https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout">Anthropic IPO buyers see valuation as low as $1.1T</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50394906">讨论</a></h3><p>241 分 · 495 条评论 · bloomberg.com · Hacker News</p>
+<p>AI research is accelerating rapidly, with Anthropic’s progress doubling the prior fastest rate.</p>
+<p><code>#ai</code> <code>#business</code></p>
+<h3 id="AI-is-dramatically-accelerating-AI-research-·-讨论"><a href="#AI-is-dramatically-accelerating-AI-research-·-讨论" class="headerlink" title="AI is dramatically accelerating AI research · 讨论"></a><a target="_blank" rel="noopener" href="https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai">AI is dramatically accelerating AI research</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50397994">讨论</a></h3><p>212 分 · 160 条评论 · planned-obsolescence.org · Hacker News</p>
+<p>Pwn.college is a free cybersecurity learning platform by ASU offering hands-on challenges.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Inkling-2-Small-·-讨论"><a href="#Inkling-2-Small-·-讨论" class="headerlink" title="Inkling 2 Small · 讨论"></a><a target="_blank" rel="noopener" href="https://thinkingmachines.ai/news/inkling-2-small/">Inkling 2 Small</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50386338">讨论</a></h3><p>283 分 · 90 条评论 · thinkingmachines.ai · Hacker News</p>
+<p>The author doubts AI research’s ingenuity, citing LessWrong post.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Blender’s-UI-and-Runtime-Much-Faster-Than-GPUI-·-讨论"><a href="#Blender’s-UI-and-Runtime-Much-Faster-Than-GPUI-·-讨论" class="headerlink" title="Blender’s UI and Runtime: Much Faster Than GPUI · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/ppmpreetham/BUI">Blender’s UI and Runtime: Much Faster Than GPUI</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50389333">讨论</a></h3><p>686 分 · 278 条评论 · github.com · Hacker News</p>
+<p>Blender’s UI and runtime are much faster than GPUI.</p>
+<p><code>#web</code> <code>#design</code></p>
+<h3 id="Pwn-college-·-讨论"><a href="#Pwn-college-·-讨论" class="headerlink" title="Pwn.college · 讨论"></a><a target="_blank" rel="noopener" href="https://pwn.college/">Pwn.college</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50387796">讨论</a></h3><p>306 分 · 53 条评论 · pwn.college · Hacker News</p>
+<p>Volunteers build Linux and Wikipedia, shaping the internet through collaboration.</p>
+<p><code>#oss</code> <code>#security</code></p>
+<h3 id="First-steps-in-bare-metal-programming-using-UEFI-·-讨论"><a href="#First-steps-in-bare-metal-programming-using-UEFI-·-讨论" class="headerlink" title="First steps in bare-metal programming using UEFI · 讨论"></a><a target="_blank" rel="noopener" href="https://kevinboone.me/efitest_index.html">First steps in bare-metal programming using UEFI</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50394855">讨论</a></h3><p>195 分 · 34 条评论 · kevinboone.me · Hacker News</p>
+<p>Kugelblitz is a Mac-native Google Earth alternative using open geodata for 3D globe viewing.</p>
+<p><code>#oss</code> <code>#linux</code></p>
+<h3 id="Kugelblitz-–-Mac-Native-Google-Earth-Alternative-·-讨论"><a href="#Kugelblitz-–-Mac-Native-Google-Earth-Alternative-·-讨论" class="headerlink" title="Kugelblitz – Mac-Native Google Earth Alternative · 讨论"></a><a target="_blank" rel="noopener" href="https://apps.metaebene.me/en/kugelblitz">Kugelblitz – Mac-Native Google Earth Alternative</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50389370">讨论</a></h3><p>244 分 · 65 条评论 · apps.metaebene.me · Hacker News</p>
+<p>Researchers escaped Firecracker VM to achieve root code execution on the host.</p>
+<p><code>#oss</code> <code>#web</code></p>
+<h3 id="Ask-HN-What-in-the-world-is-taking-Ubuntu-so-long"><a href="#Ask-HN-What-in-the-world-is-taking-Ubuntu-so-long" class="headerlink" title="Ask HN: What in the world is taking Ubuntu so long?"></a><a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50393105">Ask HN: What in the world is taking Ubuntu so long?</a></h3><p>182 分 · 117 条评论 · news.ycombinator.com · Hacker News</p>
+<p>Inkling 2 Small is a 594B Mixture-of-Experts model with 17B active parameters.</p>
+<p><code>#oss</code> <code>#linux</code></p>
+<h3 id="Rune-A-native-GPU-rendered-Rust-UI-framework-for-macOS-Windows-Linux-and-web-·-讨论"><a href="#Rune-A-native-GPU-rendered-Rust-UI-framework-for-macOS-Windows-Linux-and-web-·-讨论" class="headerlink" title="Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/anomalyco/rune">Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50394569">讨论</a></h3><p>155 分 · 112 条评论 · github.com · Hacker News</p>
+<p>Rune：跨平台GPU渲染UI框架</p>
+<p><code>#oss</code> <code>#rust</code> <code>#web</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Firecracker-VM-Escape-PwnEscape-Part-2-·-讨论"><a href="#Firecracker-VM-Escape-PwnEscape-Part-2-·-讨论" class="headerlink" title="Firecracker VM Escape: PwnEscape Part 2 · 讨论"></a><a target="_blank" rel="noopener" href="https://pwn.ai/blog/firecracker-escape">Firecracker VM Escape: PwnEscape Part 2</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50397219">讨论</a></h3><p>180 分 · 79 条评论 · pwn.ai · Hacker News</p>
+<p>Ubuntu has a critical CVE unfixed for a week, causing community concern.</p>
+<p><code>#security</code> <code>#infra</code></p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="From-Linux-to-Wikipedia-How-Volunteers-Build-the-Internet-·-讨论"><a href="#From-Linux-to-Wikipedia-How-Volunteers-Build-the-Internet-·-讨论" class="headerlink" title="From Linux to Wikipedia: How Volunteers Build the Internet · 讨论"></a><a target="_blank" rel="noopener" href="https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/">From Linux to Wikipedia: How Volunteers Build the Internet</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50388122">讨论</a></h3><p>302 分 · 102 条评论 · thereader.mitpress.mit.edu · Hacker News</p>
+<p>Bare-metal programming using UEFI guides Linux developers to create PC applications.</p>
+<p><code>#essay</code> <code>#oss</code></p>
+<h3 id="I-struggle-to-believe-that-AI-R-D-is-ingenious-·-讨论"><a href="#I-struggle-to-believe-that-AI-R-D-is-ingenious-·-讨论" class="headerlink" title="I struggle to believe that AI R&amp;D is ingenious · 讨论"></a><a target="_blank" rel="noopener" href="https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL">I struggle to believe that AI R&amp;D is ingenious</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50388513">讨论</a></h3><p>180 分 · 184 条评论 · lesswrong.com · Hacker News</p>
+<p>Rune is a native GPU-rendered Rust UI framework supporting multiple platforms.</p>
+<p><code>#essay</code> <code>#ai</code></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Tesla-to-wind-down-Cybertruck-production-·-讨论"><a href="#Tesla-to-wind-down-Cybertruck-production-·-讨论" class="headerlink" title="Tesla to wind down Cybertruck production · 讨论"></a><a target="_blank" rel="noopener" href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817">Tesla to wind down Cybertruck production</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50391456">讨论</a></h3><p>867 分 · 1730 条评论 · nbcnews.com · Hacker News</p>
+<p>Tesla will end Cybertruck production at Texas gigafactory around mid-2027 to boost Cybercab output.</p>
+<h3 id="Dutch-‘idealist’-bank-ASN-blocks-non-Google-Android-including-GrapheneOS-·-讨论"><a href="#Dutch-‘idealist’-bank-ASN-blocks-non-Google-Android-including-GrapheneOS-·-讨论" class="headerlink" title="Dutch ‘idealist’ bank ASN blocks non-Google Android, including GrapheneOS · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105">Dutch ‘idealist’ bank ASN blocks non-Google Android, including GrapheneOS</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50390124">讨论</a></h3><p>622 分 · 407 条评论 · github.com · Hacker News</p>
+<p>Dutch bank ASN blocks non-Google Android devices, including GrapheneOS.</p>
+<h3 id="Deus-Ex-·-讨论"><a href="#Deus-Ex-·-讨论" class="headerlink" title="Deus Ex · 讨论"></a><a target="_blank" rel="noopener" href="https://www.filfre.net/2026/11/deus-ex/">Deus Ex</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50393758">讨论</a></h3><p>342 分 · 178 条评论 · filfre.net · Hacker News</p>
+<p>Britain will make salary disclosure mandatory in job advertisements.</p>
+<h3 id="Britain-to-make-salary-disclosure-in-job-ads-mandatory-·-讨论"><a href="#Britain-to-make-salary-disclosure-in-job-ads-mandatory-·-讨论" class="headerlink" title="Britain to make salary disclosure in job ads mandatory · 讨论"></a><a target="_blank" rel="noopener" href="https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/">Britain to make salary disclosure in job ads mandatory</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50389222">讨论</a></h3><p>565 分 · 430 条评论 · reuters.com · Hacker News</p>
+<p>Claude Code sends users’ email addresses to websites.</p>
+<p><code>#policy</code></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/business/" rel="tag"># business</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/design/" rel="tag"># design</a>
+              <a href="/tags/web/" rel="tag"># web</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/07-morning" rel="prev" title="2026-11-07 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-07 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/07-evening" rel="next" title="2026-11-07 · 财经晚报">
+                  2026-11-07 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

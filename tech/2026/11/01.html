@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 16 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-01 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/01">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 16 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-31T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-07T10:42:02.608Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/01">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/01","path":"/tech/2026/11/01.html","title":"2026-11-01 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-01 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Serbia-just-elected-the-world%E2%80%99s-brainiest-parliament-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Serbia just elected the world’s brainiest parliament · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Do-the-math-How-we-took-over-ChatGPT-accounts-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Do the math: How we took over ChatGPT accounts · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Malware-uses-LLMs-to-rank-victims-by-how-much-they%E2%80%99re-worth-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Malware uses LLMs to rank victims by how much they’re worth · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anthropic-blocks-users-for-anything-touching-training-larger-models-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Anthropic blocks users for anything touching training larger models · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPT-5-6-Sol-can-beat-Factorio-on-peaceful-mode-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">GPT-5.6 Sol can beat Factorio on peaceful mode · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-raises-less-than-half-of-30B-target-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">OpenAI raises less than half of $30B target · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anthropic-takes-steps-to-block-Claude-from-reverse-engineering-video-games-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Anthropic takes steps to block Claude from reverse-engineering video games · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AO3-Down-for-Maintenance-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AO3 Down for Maintenance · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sanstun-A-sans-IO-parallel-friendly-WireGuard-implementation-in-Rust-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Incident-with-Actions-Pages-and-Webhooks-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">GitHub Incident with Actions, Pages, and Webhooks · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Memdoor-A-team-of-5-Qwen3-8-27B-models-beats-Fable-5-on-LiveCodeBench-Hard-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#It%E2%80%99s-the-memory-latency-stupid-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">It’s the memory latency, stupid · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HackerTube-YouTube-built-from-videos-recommended-by-HN-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">HackerTube: YouTube built from videos recommended by HN · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP-Use-After-Free-CVE-2026-98432-CVSS-9-8-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">TCP Use-After-Free: CVE-2026-98432 &#x2F; CVSS 9.8 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Molly-Signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Molly (Signal fork) has not been updated since 3 months and is vulnerable · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Digital-minimalism-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Digital minimalism · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/01">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-01 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 16 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-01 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-01 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-01T07:00:00+08:00">2026-11-01 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 16 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 16 条，来自 1 个源，覆盖 10-31 07:00 → 11-01 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://karpathy.bearblog.dev/hacker-tube/">HackerTube: YouTube built from videos recommended by HN</a></li>
+<li><a target="_blank" rel="noopener" href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf">TCP Use-After-Free: CVE-2026-98432 &#x2F; CVSS 9.8</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament">Serbia just elected the world’s brainiest parliament</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="Serbia-just-elected-the-world’s-brainiest-parliament-·-讨论"><a href="#Serbia-just-elected-the-world’s-brainiest-parliament-·-讨论" class="headerlink" title="Serbia just elected the world’s brainiest parliament · 讨论"></a><a target="_blank" rel="noopener" href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament">Serbia just elected the world’s brainiest parliament</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50314654">讨论</a></h3><p>816 分 · 466 条评论 · science.org · Hacker News</p>
+<p>塞尔维亚当选全球最聪明议会</p>
+<h3 id="Do-the-math-How-we-took-over-ChatGPT-accounts-·-讨论"><a href="#Do-the-math-How-we-took-over-ChatGPT-accounts-·-讨论" class="headerlink" title="Do the math: How we took over ChatGPT accounts · 讨论"></a><a target="_blank" rel="noopener" href="https://www.parameter.ai/labs/we-found-a-gap-at-openai">Do the math: How we took over ChatGPT accounts</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50314699">讨论</a></h3><p>303 分 · 150 条评论 · parameter.ai · Hacker News</p>
+<p>通过分享链接绕过沙箱接管ChatGPT账号</p>
+<h3 id="Malware-uses-LLMs-to-rank-victims-by-how-much-they’re-worth-·-讨论"><a href="#Malware-uses-LLMs-to-rank-victims-by-how-much-they’re-worth-·-讨论" class="headerlink" title="Malware uses LLMs to rank victims by how much they’re worth · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/">Malware uses LLMs to rank victims by how much they’re worth</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50316531">讨论</a></h3><p>233 分 · 128 条评论 · blog.talosintelligence.com · Hacker News</p>
+<p>恶意软件利用大模型对受害者价值进行画像</p>
+<h3 id="Anthropic-blocks-users-for-anything-touching-training-larger-models-·-讨论"><a href="#Anthropic-blocks-users-for-anything-touching-training-larger-models-·-讨论" class="headerlink" title="Anthropic blocks users for anything touching training larger models · 讨论"></a><a target="_blank" rel="noopener" href="https://twitter.com/jiahaoshao1/status/2116475922190922088">Anthropic blocks users for anything touching training larger models</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50319358">讨论</a></h3><p>204 分 · 118 条评论 · twitter.com · Hacker News</p>
+<p>Anthropic封禁涉及训练大模型的用户</p>
+<h3 id="GPT-5-6-Sol-can-beat-Factorio-on-peaceful-mode-·-讨论"><a href="#GPT-5-6-Sol-can-beat-Factorio-on-peaceful-mode-·-讨论" class="headerlink" title="GPT-5.6 Sol can beat Factorio on peaceful mode · 讨论"></a><a target="_blank" rel="noopener" href="https://ryanmadden.net/gpt-56-beats-factorio/">GPT-5.6 Sol can beat Factorio on peaceful mode</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50318871">讨论</a></h3><p>157 分 · 173 条评论 · ryanmadden.net · Hacker News</p>
+<p>GPT-5.6 Sol在和平模式下通关Factorio</p>
+<h3 id="OpenAI-raises-less-than-half-of-30B-target-·-讨论"><a href="#OpenAI-raises-less-than-half-of-30B-target-·-讨论" class="headerlink" title="OpenAI raises less than half of $30B target · 讨论"></a><a target="_blank" rel="noopener" href="https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5">OpenAI raises less than half of $30B target</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50312922">讨论</a></h3><p>182 分 · 186 条评论 · wsj.com · Hacker News</p>
+<p>OpenAI融资额未达300亿美元目标的一半</p>
+<h3 id="Anthropic-takes-steps-to-block-Claude-from-reverse-engineering-video-games-·-讨论"><a href="#Anthropic-takes-steps-to-block-Claude-from-reverse-engineering-video-games-·-讨论" class="headerlink" title="Anthropic takes steps to block Claude from reverse-engineering video games · 讨论"></a><a target="_blank" rel="noopener" href="https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering">Anthropic takes steps to block Claude from reverse-engineering video games</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50320255">讨论</a></h3><p>102 分 · 69 条评论 · mashable.com · Hacker News</p>
+<p>Anthropic限制Claude进行游戏逆向和移植工作</p>
+<h3 id="AO3-Down-for-Maintenance-·-讨论"><a href="#AO3-Down-for-Maintenance-·-讨论" class="headerlink" title="AO3 Down for Maintenance · 讨论"></a><a target="_blank" rel="noopener" href="https://www.otwstatus.org/">AO3 Down for Maintenance</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50310258">讨论</a></h3><p>127 分 · 41 条评论 · otwstatus.org · Hacker News</p>
+<p>AO3正在进行维护</p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Sanstun-A-sans-IO-parallel-friendly-WireGuard-implementation-in-Rust-·-讨论"><a href="#Sanstun-A-sans-IO-parallel-friendly-WireGuard-implementation-in-Rust-·-讨论" class="headerlink" title="Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust · 讨论"></a><a target="_blank" rel="noopener" href="https://www.firezone.dev/blog/introducing-sanstun">Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50310398">讨论</a></h3><p>157 分 · 40 条评论 · firezone.dev · Hacker News</p>
+<p>发布Rust编写的并行友好WireGuard状态机实现</p>
+<h3 id="GitHub-Incident-with-Actions-Pages-and-Webhooks-·-讨论"><a href="#GitHub-Incident-with-Actions-Pages-and-Webhooks-·-讨论" class="headerlink" title="GitHub Incident with Actions, Pages, and Webhooks · 讨论"></a><a target="_blank" rel="noopener" href="https://www.githubstatus.com/incidents/pwxsjgnvrk6b">GitHub Incident with Actions, Pages, and Webhooks</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50307723">讨论</a></h3><p>154 分 · 62 条评论 · githubstatus.com · Hacker News</p>
+<p>GitHub Actions、Pages和Webhooks发生故障</p>
+<h3 id="Memdoor-A-team-of-5-Qwen3-8-27B-models-beats-Fable-5-on-LiveCodeBench-Hard-·-讨论"><a href="#Memdoor-A-team-of-5-Qwen3-8-27B-models-beats-Fable-5-on-LiveCodeBench-Hard-·-讨论" class="headerlink" title="Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve">Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50320995">讨论</a></h3><p>86 分 · 44 条评论 · github.com · Hacker News</p>
+<p>五个Qwen3.8-27B模型组队超越Fable 5</p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="It’s-the-memory-latency-stupid-·-讨论"><a href="#It’s-the-memory-latency-stupid-·-讨论" class="headerlink" title="It’s the memory latency, stupid · 讨论"></a><a target="_blank" rel="noopener" href="https://pivotlake.io/blog/its-the-memory-latency-stupid/">It’s the memory latency, stupid</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50318720">讨论</a></h3><p>129 分 · 41 条评论 · pivotlake.io · Hacker News</p>
+<p>分析数据库CPU高占用背后的内存延迟问题</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="HackerTube-YouTube-built-from-videos-recommended-by-HN-·-讨论"><a href="#HackerTube-YouTube-built-from-videos-recommended-by-HN-·-讨论" class="headerlink" title="HackerTube: YouTube built from videos recommended by HN · 讨论"></a><a target="_blank" rel="noopener" href="https://karpathy.bearblog.dev/hacker-tube/">HackerTube: YouTube built from videos recommended by HN</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50319510">讨论</a></h3><p>746 分 · 246 条评论 · karpathy.bearblog.dev · Hacker News</p>
+<p>基于HN推荐视频搭建YouTube克隆站</p>
+<h3 id="TCP-Use-After-Free-CVE-2026-98432-CVSS-9-8-·-讨论"><a href="#TCP-Use-After-Free-CVE-2026-98432-CVSS-9-8-·-讨论" class="headerlink" title="TCP Use-After-Free: CVE-2026-98432 &#x2F; CVSS 9.8 · 讨论"></a><a target="_blank" rel="noopener" href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf">TCP Use-After-Free: CVE-2026-98432 &#x2F; CVSS 9.8</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50319143">讨论</a></h3><p>354 分 · 168 条评论 · atlasum.net · Hacker News</p>
+<p>Linux TCP内核存在远程可利用的高危漏洞</p>
+<h3 id="Molly-Signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-·-讨论"><a href="#Molly-Signal-fork-has-not-been-updated-since-3-months-and-is-vulnerable-·-讨论" class="headerlink" title="Molly (Signal fork) has not been updated since 3 months and is vulnerable · 讨论"></a><a target="_blank" rel="noopener" href="https://piefed.world/post/1503394">Molly (Signal fork) has not been updated since 3 months and is vulnerable</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50314666">讨论</a></h3><p>308 分 · 182 条评论 · piefed.world · Hacker News</p>
+<p>Molly长期未更新且存在Signal已修复的漏洞</p>
+<h3 id="Digital-minimalism-·-讨论"><a href="#Digital-minimalism-·-讨论" class="headerlink" title="Digital minimalism · 讨论"></a><a target="_blank" rel="noopener" href="https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html">Digital minimalism</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50313661">讨论</a></h3><p>308 分 · 228 条评论 · vitalik.eth.limo · Hacker News</p>
+<p>探讨在现代数字生活中践行数字极简主义</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/01-morning" rel="prev" title="2026-11-01 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-01 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/02-morning" rel="next" title="2026-11-02 · 财经早报">
+                  2026-11-02 · 财经早报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
