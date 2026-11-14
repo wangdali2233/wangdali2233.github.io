@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 15 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-05 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/05">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 15 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-04T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-14T10:58:15.951Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/05">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/05","path":"/tech/2026/11/05.html","title":"2026-11-05 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-05 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AI-is-forcing-us-to-pay-off-40-years-of-technical-debt-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AI is forcing us to pay off 40 years of technical debt · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tell-HN-Gemini-trains-on-chat-history-even-for-subscribers-personal-accounts"><span class="nav-text">Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kimi-K3-1-Pro-model-weights-are-out-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Kimi K3.1 Pro model weights are out · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Geoffrey-Hinton-it-might-turn-out-we-were-better-off-without-AI-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Geoffrey Hinton: it might turn out we were better off without AI · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ripple-65B-Preview-U-S-Open-Weight-SOTA-on-Agentic-Coding-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-to-acquire-Pierre-Computer-Company-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">OpenAI to acquire Pierre Computer Company · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Progress-on-provable-inference-for-large-language-models-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Progress on provable inference for large language models · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-I-use-AI-Oct-2026-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">How I use AI (Oct 2026) · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-Kairos-%E2%80%93-Open-source-risk-and-fraud-decisioning-platform-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: Kairos – Open-source risk and fraud decisioning platform · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-I-built-a-tool-that-prices-a-pre-built-PC-part-by-part-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: I built a tool that prices a pre-built PC part by part · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nvidia-RTX-Spark-encrypted-firmware-slows-inference-speed-to-35-on-Linux-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Residential-proxies-detected-on-White-House-network-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Residential proxies detected on White House network · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#North-Korean-fake-job-interview-led-to-6-3B-Binance-heist-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">North Korean fake job interview led to $6.3B Binance heist · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AMD-expects-to-outsell-Intel-in-Q4-for-the-first-time-in-history-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AMD expects to outsell Intel in Q4 for the first time in history · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#US-voters-roundly-reject-data-centers-in-ballot-measures-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">US voters roundly reject data centers in ballot measures · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">70</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/05">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-05 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 15 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-05 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-05 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-05T07:00:00+08:00">2026-11-05 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 15 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 15 条，来自 1 个源，覆盖 11-04 07:00 → 11-05 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://layer3intel.com/blog/residential-proxies-white-house-network">Residential proxies detected on White House network</a></li>
+<li><a target="_blank" rel="noopener" href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">AI is forcing us to pay off 40 years of technical debt</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398">North Korean fake job interview led to $6.3B Binance heist</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="AI-is-forcing-us-to-pay-off-40-years-of-technical-debt-·-讨论"><a href="#AI-is-forcing-us-to-pay-off-40-years-of-technical-debt-·-讨论" class="headerlink" title="AI is forcing us to pay off 40 years of technical debt · 讨论"></a><a target="_blank" rel="noopener" href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">AI is forcing us to pay off 40 years of technical debt</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50364336">讨论</a></h3><p>1111 分 · 643 条评论 · spectrum.ieee.org · Hacker News</p>
+<p>PHP2Shell 事件警示 AI 网络安全风险</p>
+<h3 id="Tell-HN-Gemini-trains-on-chat-history-even-for-subscribers-personal-accounts"><a href="#Tell-HN-Gemini-trains-on-chat-history-even-for-subscribers-personal-accounts" class="headerlink" title="Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)"></a><a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50363461">Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)</a></h3><p>634 分 · 164 条评论 · news.ycombinator.com · Hacker News</p>
+<p>Gemini 训练用户聊天记录，订阅用户无法选择退出</p>
+<h3 id="Kimi-K3-1-Pro-model-weights-are-out-·-讨论"><a href="#Kimi-K3-1-Pro-model-weights-are-out-·-讨论" class="headerlink" title="Kimi K3.1 Pro model weights are out · 讨论"></a><a target="_blank" rel="noopener" href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Kimi K3.1 Pro model weights are out</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50366999">讨论</a></h3><p>413 分 · 114 条评论 · huggingface.co · Hacker News</p>
+<p>Kimi K3.1 Pro 模型权重发布</p>
+<h3 id="Geoffrey-Hinton-it-might-turn-out-we-were-better-off-without-AI-·-讨论"><a href="#Geoffrey-Hinton-it-might-turn-out-we-were-better-off-without-AI-·-讨论" class="headerlink" title="Geoffrey Hinton: it might turn out we were better off without AI · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai">Geoffrey Hinton: it might turn out we were better off without AI</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50363554">讨论</a></h3><p>302 分 · 297 条评论 · theguardian.com · Hacker News</p>
+<p>AI 之父 Geoffrey Hinton：或许没有 AI 更好</p>
+<h3 id="Ripple-65B-Preview-U-S-Open-Weight-SOTA-on-Agentic-Coding-·-讨论"><a href="#Ripple-65B-Preview-U-S-Open-Weight-SOTA-on-Agentic-Coding-·-讨论" class="headerlink" title="Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding · 讨论"></a><a target="_blank" rel="noopener" href="https://www.ricursive.com/ripple">Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50369925">讨论</a></h3><p>241 分 · 82 条评论 · ricursive.com · Hacker News</p>
+<p>Ripple-65B 预览：美国开源模型在代理编程中领先</p>
+<h3 id="OpenAI-to-acquire-Pierre-Computer-Company-·-讨论"><a href="#OpenAI-to-acquire-Pierre-Computer-Company-·-讨论" class="headerlink" title="OpenAI to acquire Pierre Computer Company · 讨论"></a><a target="_blank" rel="noopener" href="https://openai.com/index/openai-to-acquire-pierre/">OpenAI to acquire Pierre Computer Company</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50366863">讨论</a></h3><p>207 分 · 62 条评论 · openai.com · Hacker News</p>
+<p>OpenAI 收购 Pierre 计算机公司</p>
+<h3 id="Progress-on-provable-inference-for-large-language-models-·-讨论"><a href="#Progress-on-provable-inference-for-large-language-models-·-讨论" class="headerlink" title="Progress on provable inference for large language models · 讨论"></a><a target="_blank" rel="noopener" href="https://www.anthropic.com/research/provable-inference">Progress on provable inference for large language models</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50368626">讨论</a></h3><p>185 分 · 87 条评论 · anthropic.com · Hacker News</p>
+<p>大型语言模型可证明推理研究进展</p>
+<h3 id="How-I-use-AI-Oct-2026-·-讨论"><a href="#How-I-use-AI-Oct-2026-·-讨论" class="headerlink" title="How I use AI (Oct 2026) · 讨论"></a><a target="_blank" rel="noopener" href="https://ben.stolovitz.com/posts/how-use-ai-oct-2026/">How I use AI (Oct 2026)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50355767">讨论</a></h3><p>250 分 · 300 条评论 · ben.stolovitz.com · Hacker News</p>
+<p>我如何使用 AI（2026 年 10 月）</p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Show-HN-Kairos-–-Open-source-risk-and-fraud-decisioning-platform-·-讨论"><a href="#Show-HN-Kairos-–-Open-source-risk-and-fraud-decisioning-platform-·-讨论" class="headerlink" title="Show HN: Kairos – Open-source risk and fraud decisioning platform · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/finic-ai/kairos">Show HN: Kairos – Open-source risk and fraud decisioning platform</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50358314">讨论</a></h3><p>104 分 · 31 条评论 · github.com · Hacker News</p>
+<p>Show HN：Kairos——开源风险和欺诈决策平台</p>
+<h3 id="Show-HN-I-built-a-tool-that-prices-a-pre-built-PC-part-by-part-·-讨论"><a href="#Show-HN-I-built-a-tool-that-prices-a-pre-built-PC-part-by-part-·-讨论" class="headerlink" title="Show HN: I built a tool that prices a pre-built PC part by part · 讨论"></a><a target="_blank" rel="noopener" href="https://pcdealcheck.com/">Show HN: I built a tool that prices a pre-built PC part by part</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50366929">讨论</a></h3><p>96 分 · 69 条评论 · pcdealcheck.com · Hacker News</p>
+<p>Show HN：我开发了一个按部件定价的预制电脑工具</p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Nvidia-RTX-Spark-encrypted-firmware-slows-inference-speed-to-35-on-Linux-·-讨论"><a href="#Nvidia-RTX-Spark-encrypted-firmware-slows-inference-speed-to-35-on-Linux-·-讨论" class="headerlink" title="Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux · 讨论"></a><a target="_blank" rel="noopener" href="https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop">Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50362905">讨论</a></h3><p>593 分 · 274 条评论 · mindstudio.ai · Hacker News</p>
+<p>Nvidia RTX Spark 加密固件导致 Linux 下推理速度降至 35%</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Residential-proxies-detected-on-White-House-network-·-讨论"><a href="#Residential-proxies-detected-on-White-House-network-·-讨论" class="headerlink" title="Residential proxies detected on White House network · 讨论"></a><a target="_blank" rel="noopener" href="https://layer3intel.com/blog/residential-proxies-white-house-network">Residential proxies detected on White House network</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50371246">讨论</a></h3><p>739 分 · 233 条评论 · layer3intel.com · Hacker News</p>
+<p>白宫网络检测到住宅代理</p>
+<h3 id="North-Korean-fake-job-interview-led-to-6-3B-Binance-heist-·-讨论"><a href="#North-Korean-fake-job-interview-led-to-6-3B-Binance-heist-·-讨论" class="headerlink" title="North Korean fake job interview led to $6.3B Binance heist · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398">North Korean fake job interview led to $6.3B Binance heist</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50365755">讨论</a></h3><p>586 分 · 362 条评论 · theregister.com · Hacker News</p>
+<p>朝鲜假面试诱骗导致 63 亿美元币币被盗</p>
+<h3 id="AMD-expects-to-outsell-Intel-in-Q4-for-the-first-time-in-history-·-讨论"><a href="#AMD-expects-to-outsell-Intel-in-Q4-for-the-first-time-in-history-·-讨论" class="headerlink" title="AMD expects to outsell Intel in Q4 for the first time in history · 讨论"></a><a target="_blank" rel="noopener" href="https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections">AMD expects to outsell Intel in Q4 for the first time in history</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50367125">讨论</a></h3><p>494 分 · 177 条评论 · tomshardware.com · Hacker News</p>
+<p>AMD 预计 Q4 首次超越 Intel 销量</p>
+<h3 id="US-voters-roundly-reject-data-centers-in-ballot-measures-·-讨论"><a href="#US-voters-roundly-reject-data-centers-in-ballot-measures-·-讨论" class="headerlink" title="US voters roundly reject data centers in ballot measures · 讨论"></a><a target="_blank" rel="noopener" href="https://www.semafor.com/article/11/04/2026/us-voters-roundly-reject-data-centers-in-ballot-measures">US voters roundly reject data centers in ballot measures</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50365982">讨论</a></h3><p>315 分 · 633 条评论 · semafor.com · Hacker News</p>
+<p>美国选民投票全面反对数据中心建设</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/05-morning" rel="prev" title="2026-11-05 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-05 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/05-evening" rel="next" title="2026-11-05 · 财经晚报">
+                  2026-11-05 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

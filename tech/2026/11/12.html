@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-12 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/12">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-11T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-14T10:58:15.951Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="business">
+<meta property="article:tag" content="security">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="essay">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="agents">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="graphics">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/12">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/12","path":"/tech/2026/11/12.html","title":"2026-11-12 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-12 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#United-Airlines-bans-AI-agents-from-booking-flights-on-behalf-of-travelers-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">United Airlines bans AI agents from booking flights on behalf of travelers · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#My-AI-agents-found-an-unmapped-Maya-site-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">My AI agents found an unmapped Maya site? · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gemini-Decisions-API-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Gemini Decisions API · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple-has-new-Mac-app-coming-to-make-running-local-AI-models-easy-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Apple has new Mac app coming to make running local AI models easy · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Atuin-Threads-All-your-agent-sessions-on-every-machine-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Atuin Threads: All your agent sessions on every machine · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hyper-Realistic-Sand-with-WebGL2-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Hyper-Realistic Sand with WebGL2 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-I-recreated-Papers-Please-but-you%E2%80%99re-deciding-which-YC-startups-to-fund-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: I recreated Papers Please but you’re deciding which YC startups to fund · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-great-old-timey-game-programming-hack-2013-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">A great old-timey game-programming hack (2013) · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-Yogurt-%E2%80%93-Free-private-open-source-alternative-to-Granola-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: Yogurt – Free, private, open-source alternative to Granola · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AWS-emulator-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AWS emulator · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-false-smoke-alarm-almost-drowned-Jane-Street%E2%80%99s-only-NYC-datacenter-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">A false smoke alarm almost drowned Jane Street’s only NYC datacenter · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Starlink-Mini-2-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Starlink Mini 2 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Protecting-SSH-Keys-with-macOS-Secure-Enclave-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Protecting SSH Keys with macOS Secure Enclave · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#I-asked-every-TV-manufacturer-17-questions-about-how-they-spy-on-you-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">I asked every TV manufacturer 17 questions about how they spy on you · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-are-we-still-working-this-hard-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Why are we still working this hard? · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#We-need-more-goat-sacrifices-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">We need more goat sacrifices · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nvidia-is-preparing-to-oust-Jensen-Huang-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Nvidia is preparing to oust Jensen Huang · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tim-Peters-has-died-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Tim Peters has died · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jensen-Huang-said-to-have-had-relationship-with-executive-who-reports-to-him-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Jensen Huang said to have had relationship with executive who reports to him · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Val-Town-is-winding-down-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Val Town is winding down · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">70</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/12">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-12 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-12 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-12 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-12T07:00:00+08:00">2026-11-12 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源，覆盖 11-11 07:00 → 11-12 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad">Nvidia is preparing to oust Jensen Huang</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/aws/aws-emulator">AWS emulator</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/">United Airlines bans AI agents from booking flights on behalf of travelers</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="United-Airlines-bans-AI-agents-from-booking-flights-on-behalf-of-travelers-·-讨论"><a href="#United-Airlines-bans-AI-agents-from-booking-flights-on-behalf-of-travelers-·-讨论" class="headerlink" title="United Airlines bans AI agents from booking flights on behalf of travelers · 讨论"></a><a target="_blank" rel="noopener" href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/">United Airlines bans AI agents from booking flights on behalf of travelers</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50458900">讨论</a></h3><p>446 分 · 430 条评论 · cbsnews.com · Hacker News</p>
+<p>United Airlines bans AI agents from booking flights due to security risks</p>
+<p><code>#ai</code> <code>#agents</code></p>
+<h3 id="My-AI-agents-found-an-unmapped-Maya-site-·-讨论"><a href="#My-AI-agents-found-an-unmapped-Maya-site-·-讨论" class="headerlink" title="My AI agents found an unmapped Maya site? · 讨论"></a><a target="_blank" rel="noopener" href="https://pietromiotti.com/latest/maya-site">My AI agents found an unmapped Maya site?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50452455">讨论</a></h3><p>943 分 · 342 条评论 · pietromiotti.com · Hacker News</p>
+<p>AI agents rediscover unmapped Maya site in Mexico</p>
+<p><code>#ai</code> <code>#agents</code></p>
+<h3 id="Gemini-Decisions-API-·-讨论"><a href="#Gemini-Decisions-API-·-讨论" class="headerlink" title="Gemini Decisions API · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/">Gemini Decisions API</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50456791">讨论</a></h3><p>309 分 · 99 条评论 · blog.google · Hacker News</p>
+<p>Gemini Decisions API released by Google</p>
+<p><code>#ai</code></p>
+<h3 id="Apple-has-new-Mac-app-coming-to-make-running-local-AI-models-easy-·-讨论"><a href="#Apple-has-new-Mac-app-coming-to-make-running-local-AI-models-easy-·-讨论" class="headerlink" title="Apple has new Mac app coming to make running local AI models easy · 讨论"></a><a target="_blank" rel="noopener" href="https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/">Apple has new Mac app coming to make running local AI models easy</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50446520">讨论</a></h3><p>521 分 · 528 条评论 · 9to5mac.com · Hacker News</p>
+<p>Apple develops Harbor Mac app for local AI model execution</p>
+<p><code>#ai</code> <code>#oss</code></p>
+<h3 id="Atuin-Threads-All-your-agent-sessions-on-every-machine-·-讨论"><a href="#Atuin-Threads-All-your-agent-sessions-on-every-machine-·-讨论" class="headerlink" title="Atuin Threads: All your agent sessions on every machine · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.atuin.sh/threads-agent-sessions/">Atuin Threads: All your agent sessions on every machine</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50453637">讨论</a></h3><p>196 分 · 76 条评论 · blog.atuin.sh · Hacker News</p>
+<p>Atuin Threads aggregates agent sessions across machines</p>
+<p><code>#ai</code> <code>#agents</code> <code>#oss</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Hyper-Realistic-Sand-with-WebGL2-·-讨论"><a href="#Hyper-Realistic-Sand-with-WebGL2-·-讨论" class="headerlink" title="Hyper-Realistic Sand with WebGL2 · 讨论"></a><a target="_blank" rel="noopener" href="https://av.github.io/safe-sand/">Hyper-Realistic Sand with WebGL2</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50453288">讨论</a></h3><p>329 分 · 66 条评论 · av.github.io · Hacker News</p>
+<p>Hyper-realistic sand simulation using WebGL2</p>
+<p><code>#web</code> <code>#graphics</code></p>
+<h3 id="Show-HN-I-recreated-Papers-Please-but-you’re-deciding-which-YC-startups-to-fund-·-讨论"><a href="#Show-HN-I-recreated-Papers-Please-but-you’re-deciding-which-YC-startups-to-fund-·-讨论" class="headerlink" title="Show HN: I recreated Papers Please but you’re deciding which YC startups to fund · 讨论"></a><a target="_blank" rel="noopener" href="https://termsheetplease.com/">Show HN: I recreated Papers Please but you’re deciding which YC startups to fund</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50457230">讨论</a></h3><p>196 分 · 77 条评论 · termsheetplease.com · Hacker News</p>
+<p>Show HN: Papers Please-style YC startup funding decision game</p>
+<p><code>#oss</code> <code>#web</code></p>
+<h3 id="A-great-old-timey-game-programming-hack-2013-·-讨论"><a href="#A-great-old-timey-game-programming-hack-2013-·-讨论" class="headerlink" title="A great old-timey game-programming hack (2013) · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html">A great old-timey game-programming hack (2013)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50448921">讨论</a></h3><p>264 分 · 66 条评论 · blog.moertel.com · Hacker News</p>
+<p>Classic 8-bit game programming optimization techniques</p>
+<p><code>#oss</code> <code>#web</code></p>
+<h3 id="Show-HN-Yogurt-–-Free-private-open-source-alternative-to-Granola-·-讨论"><a href="#Show-HN-Yogurt-–-Free-private-open-source-alternative-to-Granola-·-讨论" class="headerlink" title="Show HN: Yogurt – Free, private, open-source alternative to Granola · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/FrigadeHQ/yogurt">Show HN: Yogurt – Free, private, open-source alternative to Granola</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50454625">讨论</a></h3><p>191 分 · 86 条评论 · github.com · Hacker News</p>
+<p>Show HN: Yogurt, private open-source alternative to Granola</p>
+<p><code>#oss</code> <code>#productivity</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="AWS-emulator-·-讨论"><a href="#AWS-emulator-·-讨论" class="headerlink" title="AWS emulator · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/aws/aws-emulator">AWS emulator</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50456631">讨论</a></h3><p>735 分 · 222 条评论 · github.com · Hacker News</p>
+<p>AWS emulator repository with 29,684 commits</p>
+<p><code>#infra</code></p>
+<h3 id="A-false-smoke-alarm-almost-drowned-Jane-Street’s-only-NYC-datacenter-·-讨论"><a href="#A-false-smoke-alarm-almost-drowned-Jane-Street’s-only-NYC-datacenter-·-讨论" class="headerlink" title="A false smoke alarm almost drowned Jane Street’s only NYC datacenter · 讨论"></a><a target="_blank" rel="noopener" href="https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/">A false smoke alarm almost drowned Jane Street’s only NYC datacenter</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50455394">讨论</a></h3><p>435 分 · 222 条评论 · michael.bacarella.com · Hacker News</p>
+<p>Jane Street’s NYC datacenter nearly flooded due to false smoke alarm</p>
+<p><code>#infra</code> <code>#security</code></p>
+<h3 id="Starlink-Mini-2-·-讨论"><a href="#Starlink-Mini-2-·-讨论" class="headerlink" title="Starlink Mini 2 · 讨论"></a><a target="_blank" rel="noopener" href="https://starlink.com/mini-2">Starlink Mini 2</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50444129">讨论</a></h3><p>504 分 · 591 条评论 · starlink.com · Hacker News</p>
+<p>Starlink Mini 2 announced</p>
+<p><code>#infra</code> <code>#mobile</code></p>
+<h3 id="Protecting-SSH-Keys-with-macOS-Secure-Enclave-·-讨论"><a href="#Protecting-SSH-Keys-with-macOS-Secure-Enclave-·-讨论" class="headerlink" title="Protecting SSH Keys with macOS Secure Enclave · 讨论"></a><a target="_blank" rel="noopener" href="https://gatezh.com/posts/macos-secure-enclave-ssh-keys/">Protecting SSH Keys with macOS Secure Enclave</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50449748">讨论</a></h3><p>384 分 · 137 条评论 · gatezh.com · Hacker News</p>
+<p>macOS Secure Enclave used to protect SSH keys</p>
+<p><code>#security</code> <code>#linux</code></p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="I-asked-every-TV-manufacturer-17-questions-about-how-they-spy-on-you-·-讨论"><a href="#I-asked-every-TV-manufacturer-17-questions-about-how-they-spy-on-you-·-讨论" class="headerlink" title="I asked every TV manufacturer 17 questions about how they spy on you · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theverge.com/tech/1012372/tv-privacy-acr-questions">I asked every TV manufacturer 17 questions about how they spy on you</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50453474">讨论</a></h3><p>342 分 · 238 条评论 · theverge.com · Hacker News</p>
+<p>TV manufacturers asked 17 questions about spying on users</p>
+<p><code>#privacy</code> <code>#essay</code></p>
+<h3 id="Why-are-we-still-working-this-hard-·-讨论"><a href="#Why-are-we-still-working-this-hard-·-讨论" class="headerlink" title="Why are we still working this hard? · 讨论"></a><a target="_blank" rel="noopener" href="https://wilsoniumite.com/2026/11/11/why-are-we-still-working-this-hard/">Why are we still working this hard?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50457939">讨论</a></h3><p>214 分 · 261 条评论 · wilsoniumite.com · Hacker News</p>
+<p>Productivity gains haven’t reduced work hours since 1973</p>
+<p><code>#essay</code></p>
+<h3 id="We-need-more-goat-sacrifices-·-讨论"><a href="#We-need-more-goat-sacrifices-·-讨论" class="headerlink" title="We need more goat sacrifices · 讨论"></a><a target="_blank" rel="noopener" href="https://www.experimental-history.com/p/we-need-more-goat-sacrifices">We need more goat sacrifices</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50452652">讨论</a></h3><p>191 分 · 109 条评论 · experimental-history.com · Hacker News</p>
+<p>Call for more goat sacrifices before weekly post</p>
+<p><code>#essay</code></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Nvidia-is-preparing-to-oust-Jensen-Huang-·-讨论"><a href="#Nvidia-is-preparing-to-oust-Jensen-Huang-·-讨论" class="headerlink" title="Nvidia is preparing to oust Jensen Huang · 讨论"></a><a target="_blank" rel="noopener" href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad">Nvidia is preparing to oust Jensen Huang</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50459703">讨论</a></h3><p>651 分 · 922 条评论 · wsj.com · Hacker News</p>
+<p>Nvidia reportedly plans to remove Jensen Huang from leadership</p>
+<p><code>#business</code></p>
+<h3 id="Tim-Peters-has-died-·-讨论"><a href="#Tim-Peters-has-died-·-讨论" class="headerlink" title="Tim Peters has died · 讨论"></a><a target="_blank" rel="noopener" href="https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028">Tim Peters has died</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50450488">讨论</a></h3><p>945 分 · 101 条评论 · discuss.python.org · Hacker News</p>
+<p>Tim Peters, author of Zen of Python, has died</p>
+<h3 id="Jensen-Huang-said-to-have-had-relationship-with-executive-who-reports-to-him-·-讨论"><a href="#Jensen-Huang-said-to-have-had-relationship-with-executive-who-reports-to-him-·-讨论" class="headerlink" title="Jensen Huang said to have had relationship with executive who reports to him · 讨论"></a><a target="_blank" rel="noopener" href="https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html">Jensen Huang said to have had relationship with executive who reports to him</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50459321">讨论</a></h3><p>286 分 · 308 条评论 · nytimes.com · Hacker News</p>
+<p>Jensen Huang accused of relationship with subordinate executive</p>
+<p><code>#business</code></p>
+<h3 id="Val-Town-is-winding-down-·-讨论"><a href="#Val-Town-is-winding-down-·-讨论" class="headerlink" title="Val Town is winding down · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.val.town/winding-down">Val Town is winding down</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50443427">讨论</a></h3><p>418 分 · 100 条评论 · blog.val.town · Hacker News</p>
+<p>Val Town shuts down due to cloud computing competition</p>
+<p><code>#startup</code></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/business/" rel="tag"># business</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/agents/" rel="tag"># agents</a>
+              <a href="/tags/web/" rel="tag"># web</a>
+              <a href="/tags/graphics/" rel="tag"># graphics</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/12-morning" rel="prev" title="2026-11-12 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-12 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/13-morning" rel="next" title="2026-11-13 · 财经早报">
+                  2026-11-13 · 财经早报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

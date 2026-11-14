@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 17 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-08 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/08">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 17 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-07T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-14T10:58:15.951Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="essay">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/08">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/08","path":"/tech/2026/11/08.html","title":"2026-11-08 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-08 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-end-of-Microsoft-Research%E2%80%99s-AI-Frontiers-group-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The end of Microsoft Research’s AI Frontiers group · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Claude-Code%E2%80%99s-%E2%80%9CDon%E2%80%99t-Ask-Again%E2%80%9D-exposes-passwords-in-1-122-public-GitHub-files-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Claude Code’s “Don’t Ask Again” exposes passwords in 1,122 public GitHub files · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Components-of-Agent-Memory-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The Components of Agent Memory · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Restaurant-Delivery-Payment-Skimming-Campaign-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Restaurant Delivery Payment-Skimming Campaign · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-Long-Can-Life-Wait-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">How Long Can Life Wait? · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Democrats-launching-congressional-investigations-into-SpaceXAI-META-and-Apple-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Democrats launching congressional investigations into SpaceXAI, META and Apple · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Memorilla-Latent-Semantic-Memory-for-LLMs-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Memorilla: Latent Semantic Memory for LLMs · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Microsoft-is-winding-down-Oracle-deal-to-rent-AI-cloud-capacity-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Microsoft is winding down Oracle deal to rent AI cloud capacity · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-Coldframe-a-honeypot-that-poses-as-a-supermarket-fridge-controller-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E2%80%99s-new-Git-storage-architecture-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">GitHub’s new Git storage architecture · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Asahi-Linux-Progress-Linux-7-3-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Asahi Linux Progress Linux 7.3 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-8-Linux-Computer-2022-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The $8 Linux Computer (2022) · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Every-Windows-11-app-should-kill-Electron-and-Discord-just-showed-why-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Every Windows 11 app should kill Electron, and Discord just showed why · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple%E2%80%99s-grey-list-Words-and-phrases-your-iPhone-won%E2%80%99t-help-you-spell-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Apple’s grey list: Words and phrases your iPhone won’t help you spell · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-I-run-on-my-10-USD-OpenStick-homelab-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">What I run on my $10 USD OpenStick homelab · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Need-for-Speed-Underground-2-online-in-the-browser-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Need for Speed Underground 2 online in the browser · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Every-Mac-comes-with-an-undocumented-family-member-classifier-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Every Mac comes with an (undocumented) family member classifier · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">70</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/08">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-08 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 17 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-08 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-08 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-08T07:00:00+08:00">2026-11-08 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 17 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 17 条，来自 1 个源，覆盖 11-07 07:00 → 11-08 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://hunch.net/?p=13764006">The end of Microsoft Research’s AI Frontiers group</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you">Apple’s grey list: Words and phrases your iPhone won’t help you spell</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.bosscher.ch/posts/openstick/">What I run on my $10 USD OpenStick homelab</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="The-end-of-Microsoft-Research’s-AI-Frontiers-group-·-讨论"><a href="#The-end-of-Microsoft-Research’s-AI-Frontiers-group-·-讨论" class="headerlink" title="The end of Microsoft Research’s AI Frontiers group · 讨论"></a><a target="_blank" rel="noopener" href="https://hunch.net/?p=13764006">The end of Microsoft Research’s AI Frontiers group</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50406563">讨论</a></h3><p>396 分 · 235 条评论 · hunch.net · Hacker News</p>
+<p>微软AI前沿小组尝试组织化研究，但规模小且算力受限。</p>
+<h3 id="Claude-Code’s-“Don’t-Ask-Again”-exposes-passwords-in-1-122-public-GitHub-files-·-讨论"><a href="#Claude-Code’s-“Don’t-Ask-Again”-exposes-passwords-in-1-122-public-GitHub-files-·-讨论" class="headerlink" title="Claude Code’s “Don’t Ask Again” exposes passwords in 1,122 public GitHub files · 讨论"></a><a target="_blank" rel="noopener" href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Claude Code’s “Don’t Ask Again” exposes passwords in 1,122 public GitHub files</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50407882">讨论</a></h3><p>191 分 · 131 条评论 · apiiro.com · Hacker News</p>
+<p>Claude Code的“不再询问”功能曾泄露密码至千余公开仓库。</p>
+<h3 id="The-Components-of-Agent-Memory-·-讨论"><a href="#The-Components-of-Agent-Memory-·-讨论" class="headerlink" title="The Components of Agent Memory · 讨论"></a><a target="_blank" rel="noopener" href="https://www.anthropic.com/research/components-of-agent-memory">The Components of Agent Memory</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50402212">讨论</a></h3><p>151 分 · 80 条评论 · anthropic.com · Hacker News</p>
+<p>AI代理记忆可借鉴人脑睡眠期信息整合机制。</p>
+<h3 id="Restaurant-Delivery-Payment-Skimming-Campaign-·-讨论"><a href="#Restaurant-Delivery-Payment-Skimming-Campaign-·-讨论" class="headerlink" title="Restaurant Delivery Payment-Skimming Campaign · 讨论"></a><a target="_blank" rel="noopener" href="https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming">Restaurant Delivery Payment-Skimming Campaign</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50397017">讨论</a></h3><p>165 分 · 96 条评论 · infohawk.com · Hacker News</p>
+<p>820个仿冒餐厅网站正实施支付信息窃取攻击。</p>
+<h3 id="How-Long-Can-Life-Wait-·-讨论"><a href="#How-Long-Can-Life-Wait-·-讨论" class="headerlink" title="How Long Can Life Wait? · 讨论"></a><a target="_blank" rel="noopener" href="https://mceglowski.substack.com/p/how-long-can-life-wait">How Long Can Life Wait?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50405789">讨论</a></h3><p>129 分 · 79 条评论 · mceglowski.substack.com · Hacker News</p>
+<p>探讨生命等待的意义与哲学思考。</p>
+<h3 id="Democrats-launching-congressional-investigations-into-SpaceXAI-META-and-Apple-·-讨论"><a href="#Democrats-launching-congressional-investigations-into-SpaceXAI-META-and-Apple-·-讨论" class="headerlink" title="Democrats launching congressional investigations into SpaceXAI, META and Apple · 讨论"></a><a target="_blank" rel="noopener" href="https://www.washingtonpost.com/technology/2026/11/06/after-courting-trump-corporate-america-faces-democratic-reckoning/">Democrats launching congressional investigations into SpaceXAI, META and Apple</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50397102">讨论</a></h3><p>144 分 · 149 条评论 · washingtonpost.com · Hacker News</p>
+<p>民主党将对SpaceXAI、Meta和苹果展开国会调查。</p>
+<h3 id="Memorilla-Latent-Semantic-Memory-for-LLMs-·-讨论"><a href="#Memorilla-Latent-Semantic-Memory-for-LLMs-·-讨论" class="headerlink" title="Memorilla: Latent Semantic Memory for LLMs · 讨论"></a><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2610.21375">Memorilla: Latent Semantic Memory for LLMs</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50395919">讨论</a></h3><p>115 分 · 13 条评论 · arxiv.org · Hacker News</p>
+<p>Memorilla为LLM提供潜在语义记忆支持。</p>
+<h3 id="Microsoft-is-winding-down-Oracle-deal-to-rent-AI-cloud-capacity-·-讨论"><a href="#Microsoft-is-winding-down-Oracle-deal-to-rent-AI-cloud-capacity-·-讨论" class="headerlink" title="Microsoft is winding down Oracle deal to rent AI cloud capacity · 讨论"></a><a target="_blank" rel="noopener" href="https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/">Microsoft is winding down Oracle deal to rent AI cloud capacity</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50395933">讨论</a></h3><p>106 分 · 19 条评论 · reuters.com · Hacker News</p>
+<p>微软正缩减与Oracle的AI云容量租赁合作。</p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Show-HN-Coldframe-a-honeypot-that-poses-as-a-supermarket-fridge-controller-·-讨论"><a href="#Show-HN-Coldframe-a-honeypot-that-poses-as-a-supermarket-fridge-controller-·-讨论" class="headerlink" title="Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/hedgerow-dev/coldframe">Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50406292">讨论</a></h3><p>193 分 · 42 条评论 · github.com · Hacker News</p>
+<p>Coldframe是伪装成超市冰箱控制器的蜜罐项目。</p>
+<h3 id="GitHub’s-new-Git-storage-architecture-·-讨论"><a href="#GitHub’s-new-Git-storage-architecture-·-讨论" class="headerlink" title="GitHub’s new Git storage architecture · 讨论"></a><a target="_blank" rel="noopener" href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">GitHub’s new Git storage architecture</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50397099">讨论</a></h3><p>220 分 · 62 条评论 · github.blog · Hacker News</p>
+<p>GitHub推出新存储架构，支持高并发写入与弹性读取。</p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Asahi-Linux-Progress-Linux-7-3-·-讨论"><a href="#Asahi-Linux-Progress-Linux-7-3-·-讨论" class="headerlink" title="Asahi Linux Progress Linux 7.3 · 讨论"></a><a target="_blank" rel="noopener" href="https://asahilinux.org/2026/11/progress-report-7-3/">Asahi Linux Progress Linux 7.3</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50401867">讨论</a></h3><p>326 分 · 262 条评论 · asahilinux.org · Hacker News</p>
+<p>Asahi Linux为Apple Silicon推进macaudio与avd驱动上游化。</p>
+<h3 id="The-8-Linux-Computer-2022-·-讨论"><a href="#The-8-Linux-Computer-2022-·-讨论" class="headerlink" title="The $8 Linux Computer (2022) · 讨论"></a><a target="_blank" rel="noopener" href="http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html">The $8 Linux Computer (2022)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50404599">讨论</a></h3><p>201 分 · 85 条评论 · thelittleengineerthatcould.blogspot.com · Hacker News</p>
+<p>8美元RISC-V开发板Ox64可运行Linux，但外设尚未完善。</p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="Every-Windows-11-app-should-kill-Electron-and-Discord-just-showed-why-·-讨论"><a href="#Every-Windows-11-app-should-kill-Electron-and-Discord-just-showed-why-·-讨论" class="headerlink" title="Every Windows 11 app should kill Electron, and Discord just showed why · 讨论"></a><a target="_blank" rel="noopener" href="https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/">Every Windows 11 app should kill Electron, and Discord just showed why</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50403507">讨论</a></h3><p>224 分 · 215 条评论 · windowslatest.com · Hacker News</p>
+<p>Discord用Rust重写客户端，启动更快且内存占用更低。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Apple’s-grey-list-Words-and-phrases-your-iPhone-won’t-help-you-spell-·-讨论"><a href="#Apple’s-grey-list-Words-and-phrases-your-iPhone-won’t-help-you-spell-·-讨论" class="headerlink" title="Apple’s grey list: Words and phrases your iPhone won’t help you spell · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you">Apple’s grey list: Words and phrases your iPhone won’t help you spell</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50406111">讨论</a></h3><p>374 分 · 249 条评论 · theguardian.com · Hacker News</p>
+<p>苹果灰名单限制iPhone拼写辅助功能。</p>
+<h3 id="What-I-run-on-my-10-USD-OpenStick-homelab-·-讨论"><a href="#What-I-run-on-my-10-USD-OpenStick-homelab-·-讨论" class="headerlink" title="What I run on my $10 USD OpenStick homelab · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.bosscher.ch/posts/openstick/">What I run on my $10 USD OpenStick homelab</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50406670">讨论</a></h3><p>351 分 · 87 条评论 · blog.bosscher.ch · Hacker News</p>
+<p>10美元OpenStick可运行Debian，适合自托管入门。</p>
+<h3 id="Need-for-Speed-Underground-2-online-in-the-browser-·-讨论"><a href="#Need-for-Speed-Underground-2-online-in-the-browser-·-讨论" class="headerlink" title="Need for Speed Underground 2 online in the browser · 讨论"></a><a target="_blank" rel="noopener" href="https://nfsu2.xyz/">Need for Speed Underground 2 online in the browser</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50403052">讨论</a></h3><p>830 分 · 229 条评论 · nfsu2.xyz · Hacker News</p>
+<p>《极品飞车：地下狂飙2》已可在浏览器中游玩。</p>
+<h3 id="Every-Mac-comes-with-an-undocumented-family-member-classifier-·-讨论"><a href="#Every-Mac-comes-with-an-undocumented-family-member-classifier-·-讨论" class="headerlink" title="Every Mac comes with an (undocumented) family member classifier · 讨论"></a><a target="_blank" rel="noopener" href="https://8rank.ai/game/apple-intelligence-personal-knowledge-graph">Every Mac comes with an (undocumented) family member classifier</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50403097">讨论</a></h3><p>608 分 · 349 条评论 · 8rank.ai · Hacker News</p>
+<p>macOS 13起内置守护进程构建用户关系图谱。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/08-morning" rel="prev" title="2026-11-08 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-08 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/09-morning" rel="next" title="2026-11-09 · 财经早报">
+                  2026-11-09 · 财经早报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
