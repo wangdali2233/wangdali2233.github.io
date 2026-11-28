@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-25 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/25">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-24T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-28T09:50:31.995Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="security">
+<meta property="article:tag" content="hardware">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="release">
+<meta property="article:tag" content="essay">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="database">
+<meta property="article:tag" content="agents">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/25">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/25","path":"/tech/2026/11/25.html","title":"2026-11-25 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-25 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LLM-agents-work-for-their-parent-companies-not-for-you-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">LLM agents work for their parent companies, not for you · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GTA-6-Recomp-Leonida-banned-from-GitHub-while-lead-dev-was-in-school-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">GTA 6 Recomp (Leonida) banned from GitHub while lead dev was in school · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Stalwart-is-now-a-drop-in-replacement-for-Microsoft-Exchange-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Stalwart is now a drop-in replacement for Microsoft Exchange · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VP-%E2%89%A0-VNP-over-Every-Field-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">VP ≠ VNP over Every Field · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Who-in-Washington-owns-and-trades-Nvidia-stock-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Who in Washington owns and trades Nvidia stock · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-training-engine-for-your-local-model-using-your-idle-compute-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">A training engine for your local model, using your idle compute · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Just-a-Few-Bugs-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Just a Few Bugs · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tidal-bans-AI-generated-music-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Tidal bans AI-generated music · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quad9-pulled-their-DNS-service-from-France-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Quad9 pulled their DNS service from France · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anthropic-breaks-below-83-IPO-price-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Anthropic breaks below $83 IPO price · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jetty-Pro-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Jetty Pro · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Microsoft-declares-%E2%80%98Code-Red%E2%80%99-after-historic-outage-internal-memos-show-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Microsoft declares ‘Code Red’ after historic outage, internal memos show · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AMD-EPYC-Zen-6-vs-Zen-1-Performance-12-1x-Geo-Mean-in-Less-Than-10-Years-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cloudflare-hides-shortcomings-of-the-underlying-infrastructure-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Cloudflare hides shortcomings of the underlying infrastructure · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2035-came-early-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">2035 came early · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Worshipping-at-the-altar-of-Brendan-Gregg-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Worshipping at the altar of Brendan Gregg · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Investigation-of-Polymarket-Insider-Trading-on-the-Reinstatement-of-Jensen-Huang-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%9CDario-is-hyping-the-dangers-so-OSS-models-are-illegal-and-he-stays-in-control%E2%80%9D-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">“Dario is hyping the dangers so OSS models are illegal and he stays in control” · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-York-Bans-Subscription-and-Post-Purchase-Fees-on-Cars-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">New York Bans Subscription and Post-Purchase Fees on Cars · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ternary-Bonsai-2-5-27B-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Ternary Bonsai 2.5 27B · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">110</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/25">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-25 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-25 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-25 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-25T07:00:00+08:00">2026-11-25 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源，覆盖 11-24 07:00 → 11-25 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agents work for their parent companies, not for you</a></li>
+<li><a target="_blank" rel="noopener" href="https://fzakaria.com/2026/11/23/2035-came-early">2035 came early</a></li>
+<li><a target="_blank" rel="noopener" href="https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/">Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="LLM-agents-work-for-their-parent-companies-not-for-you-·-讨论"><a href="#LLM-agents-work-for-their-parent-companies-not-for-you-·-讨论" class="headerlink" title="LLM agents work for their parent companies, not for you · 讨论"></a><a target="_blank" rel="noopener" href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agents work for their parent companies, not for you</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50627340">讨论</a></h3><p>864 分 · 360 条评论 · michaelharley.net · Hacker News</p>
+<p>文章探讨了Instagram Reels音乐发现的困难，用户需手动搜索Bandcamp或YouTube获取音乐文件，平台仅提供Spotify或TikTok链接。</p>
+<p><code>#ai</code> <code>#agents</code></p>
+<h3 id="GTA-6-Recomp-Leonida-banned-from-GitHub-while-lead-dev-was-in-school-·-讨论"><a href="#GTA-6-Recomp-Leonida-banned-from-GitHub-while-lead-dev-was-in-school-·-讨论" class="headerlink" title="GTA 6 Recomp (Leonida) banned from GitHub while lead dev was in school · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/ItsNotRexed/Leonida/issues">GTA 6 Recomp (Leonida) banned from GitHub while lead dev was in school</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50622638">讨论</a></h3><p>327 分 · 590 条评论 · github.com · Hacker News</p>
+<p>标题未提供正文，仅依据标题说明GTA 6 Recomp项目因导演在校期间被GitHub封禁。</p>
+<p><code>#ai</code> <code>#agents</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Stalwart-is-now-a-drop-in-replacement-for-Microsoft-Exchange-·-讨论"><a href="#Stalwart-is-now-a-drop-in-replacement-for-Microsoft-Exchange-·-讨论" class="headerlink" title="Stalwart is now a drop-in replacement for Microsoft Exchange · 讨论"></a><a target="_blank" rel="noopener" href="https://stalw.art/blog/microsoft-exchange-replacement/">Stalwart is now a drop-in replacement for Microsoft Exchange</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50620349">讨论</a></h3><p>684 分 · 343 条评论 · stalw.art · Hacker News</p>
+<p>发布Stalwart 1.2.0，其成为Microsoft Exchange的drop-in替代品，实现MAPI over HTTP、EWS、ActiveSync等协议，Outlook等客户端可直接连接。</p>
+<p><code>#release</code> <code>#llm</code></p>
+<h3 id="VP-≠-VNP-over-Every-Field-·-讨论"><a href="#VP-≠-VNP-over-Every-Field-·-讨论" class="headerlink" title="VP ≠ VNP over Every Field · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/anthropics/formal-math/tree/main/vp-vnp">VP ≠ VNP over Every Field</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50620102">讨论</a></h3><p>357 分 · 330 条评论 · github.com · Hacker News</p>
+<p>研究证明VP是VNP的真子集，VNP不在VP闭包内，涉及哈密顿多项式和永久计算的电路复杂度下界，结果由AI模型发现。</p>
+<p><code>#release</code></p>
+<h3 id="Who-in-Washington-owns-and-trades-Nvidia-stock-·-讨论"><a href="#Who-in-Washington-owns-and-trades-Nvidia-stock-·-讨论" class="headerlink" title="Who in Washington owns and trades Nvidia stock · 讨论"></a><a target="_blank" rel="noopener" href="https://www.kadoa.com/congress/insights/trump-nvidia">Who in Washington owns and trades Nvidia stock</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50626861">讨论</a></h3><p>281 分 · 163 条评论 · kadoa.com · Hacker News</p>
+<p>文章记录了美国官员及国会成员的Nvidia股票交易，涉及Jensen Huang的辞职与复职，股价在其事件前后出现大幅波动。</p>
+<p><code>#javascript</code></p>
+<h3 id="A-training-engine-for-your-local-model-using-your-idle-compute-·-讨论"><a href="#A-training-engine-for-your-local-model-using-your-idle-compute-·-讨论" class="headerlink" title="A training engine for your local model, using your idle compute · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/sous-labs/songe">A training engine for your local model, using your idle compute</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50629231">讨论</a></h3><p>158 分 · 47 条评论 · github.com · Hacker News</p>
+<p>介绍利用闲置计算资源训练本地AI模型的引擎，涉及会话管理和分支操作。</p>
+<p><code>#oss</code> <code>#productivity</code></p>
+<h3 id="Just-a-Few-Bugs-·-讨论"><a href="#Just-a-Few-Bugs-·-讨论" class="headerlink" title="Just a Few Bugs · 讨论"></a><a target="_blank" rel="noopener" href="https://www.justafewbugs.xyz/">Just a Few Bugs</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50625953">讨论</a></h3><p>136 分 · 46 条评论 · justafewbugs.xyz · Hacker News</p>
+<p>安全研究者报告在Google Pixel上发现的漏洞，涉及逆向工程射频栈、IMS&#x2F;RTF媒体代码及可信应用等，提交95份报告大多数附带PoC。</p>
+<p><code>#security</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Tidal-bans-AI-generated-music-·-讨论"><a href="#Tidal-bans-AI-generated-music-·-讨论" class="headerlink" title="Tidal bans AI-generated music · 讨论"></a><a target="_blank" rel="noopener" href="https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/">Tidal bans AI-generated music</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50630309">讨论</a></h3><p>313 分 · 298 条评论 · variety.com · Hacker News</p>
+<p>Tidal宣布禁用AI生成的音乐内容。</p>
+<p><code>#security</code></p>
+<h3 id="Quad9-pulled-their-DNS-service-from-France-·-讨论"><a href="#Quad9-pulled-their-DNS-service-from-France-·-讨论" class="headerlink" title="Quad9 pulled their DNS service from France · 讨论"></a><a target="_blank" rel="noopener" href="https://quad9.net/news/blog/quad9-service-deactivation-in-france/">Quad9 pulled their DNS service from France</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50625384">讨论</a></h3><p>329 分 · 163 条评论 · quad9.net · Hacker News</p>
+<p>Quad9将于2026年11月24日停止在法国的DNS服务，因受到版权方beIn的投诉要求屏蔽盗版站点，公司拒绝作为内容审查工具。</p>
+<p><code>#database</code> <code>#infra</code></p>
+<h3 id="Anthropic-breaks-below-83-IPO-price-·-讨论"><a href="#Anthropic-breaks-below-83-IPO-price-·-讨论" class="headerlink" title="Anthropic breaks below $83 IPO price · 讨论"></a><a target="_blank" rel="noopener" href="https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading">Anthropic breaks below $83 IPO price</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50627836">讨论</a></h3><p>297 分 · 596 条评论 · bloomberg.com · Hacker News</p>
+<p>标题未提供正文，仅依据标题说明Anthropic IPO价格跌破83美元。</p>
+<p><code>#security</code></p>
+<h3 id="Jetty-Pro-·-讨论"><a href="#Jetty-Pro-·-讨论" class="headerlink" title="Jetty Pro · 讨论"></a><a target="_blank" rel="noopener" href="http://hypercritical.co/2026/11/23/jetty-pro">Jetty Pro</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50630462">讨论</a></h3><p>241 分 · 106 条评论 · hypercritical.co · Hacker News</p>
+<p>文章回顾作者开发的Mac应用Front、Center、SwitchGlass及Hyperspace，旨在重新实现DragThing功能或恢复磁盘空间。</p>
+<p><code>#linux</code> <code>#security</code></p>
+<h3 id="Microsoft-declares-‘Code-Red’-after-historic-outage-internal-memos-show-·-讨论"><a href="#Microsoft-declares-‘Code-Red’-after-historic-outage-internal-memos-show-·-讨论" class="headerlink" title="Microsoft declares ‘Code Red’ after historic outage, internal memos show · 讨论"></a><a target="_blank" rel="noopener" href="https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/">Microsoft declares ‘Code Red’ after historic outage, internal memos show</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50631157">讨论</a></h3><p>205 分 · 181 条评论 · reuters.com · Hacker News</p>
+<p>标题未提供正文，仅依据标题说明Microsoft因重大故障内部称为’Code Red’。</p>
+<p><code>#security</code> <code>#linux</code></p>
+<h3 id="AMD-EPYC-Zen-6-vs-Zen-1-Performance-12-1x-Geo-Mean-in-Less-Than-10-Years-·-讨论"><a href="#AMD-EPYC-Zen-6-vs-Zen-1-Performance-12-1x-Geo-Mean-in-Less-Than-10-Years-·-讨论" class="headerlink" title="AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years · 讨论"></a><a target="_blank" rel="noopener" href="https://www.phoronix.com/review/amd-epyc-9006-7601">AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50624061">讨论</a></h3><p>216 分 · 119 条评论 · phoronix.com · Hacker News</p>
+<p>对比AMD EPYC Zen 6与Zen 1处理器性能，显示12.1倍几何均值提升，涵盖功耗效率与实时工作负载测试。</p>
+<p><code>#hardware</code> <code>#infra</code></p>
+<h3 id="Cloudflare-hides-shortcomings-of-the-underlying-infrastructure-·-讨论"><a href="#Cloudflare-hides-shortcomings-of-the-underlying-infrastructure-·-讨论" class="headerlink" title="Cloudflare hides shortcomings of the underlying infrastructure · 讨论"></a><a target="_blank" rel="noopener" href="https://charlie.fish/posts/2026/11/what-cloudflare-doesnt-tell-you/">Cloudflare hides shortcomings of the underlying infrastructure</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50632883">讨论</a></h3><p>137 分 · 92 条评论 · charlie.fish · Hacker News</p>
+<p>Cloudflare虽推广现代互联网标准，但隐藏了底层基础设施的短板，如连接源服务器可能未加密仅用IPv4，缺乏对管理员的充分告警。</p>
+<p><code>#infra</code> <code>#security</code></p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="2035-came-early-·-讨论"><a href="#2035-came-early-·-讨论" class="headerlink" title="2035 came early · 讨论"></a><a target="_blank" rel="noopener" href="https://fzakaria.com/2026/11/23/2035-came-early">2035 came early</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50624497">讨论</a></h3><p>941 分 · 358 条评论 · fzakaria.com · Hacker News</p>
+<p>文章介绍trynix.dev项目，展示了用JavaScript运行GUI程序（如纸牌、GL gears），大模型加速了JavaScript主导软件的进程，实际已提前于2035年到来。</p>
+<p><code>#essay</code></p>
+<h3 id="Worshipping-at-the-altar-of-Brendan-Gregg-·-讨论"><a href="#Worshipping-at-the-altar-of-Brendan-Gregg-·-讨论" class="headerlink" title="Worshipping at the altar of Brendan Gregg · 讨论"></a><a target="_blank" rel="noopener" href="https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg">Worshipping at the altar of Brendan Gregg</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50626413">讨论</a></h3><p>211 分 · 39 条评论 · fzakaria.com · Hacker News</p>
+<p>文章分享使用Rewind VM进行性能分析的经验，重点分析构建关键路径，致敬性能分析专家Brendan Gregg的贡献。</p>
+<p><code>#essay</code></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Investigation-of-Polymarket-Insider-Trading-on-the-Reinstatement-of-Jensen-Huang-·-讨论"><a href="#Investigation-of-Polymarket-Insider-Trading-on-the-Reinstatement-of-Jensen-Huang-·-讨论" class="headerlink" title="Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang · 讨论"></a><a target="_blank" rel="noopener" href="https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/">Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50626578">讨论</a></h3><p>465 分 · 268 条评论 · deucalionn.vercel.app · Hacker News</p>
+<p>文章披露Polymarket存在内幕交易，作者开发算法监控敏感市场，通过链上数据分析发现账户ljhggk可疑交易，并证实特定交易与特定事件相关。</p>
+<h3 id="“Dario-is-hyping-the-dangers-so-OSS-models-are-illegal-and-he-stays-in-control”-·-讨论"><a href="#“Dario-is-hyping-the-dangers-so-OSS-models-are-illegal-and-he-stays-in-control”-·-讨论" class="headerlink" title="“Dario is hyping the dangers so OSS models are illegal and he stays in control” · 讨论"></a><a target="_blank" rel="noopener" href="https://twitter.com/ylecun/status/2124550037912920090">“Dario is hyping the dangers so OSS models are illegal and he stays in control”</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50615308">讨论</a></h3><p>1980 分 · 1166 条评论 · twitter.com · Hacker News</p>
+<p>观点文章讨论 OSS 模型合法性与控制权争夺</p>
+<h3 id="New-York-Bans-Subscription-and-Post-Purchase-Fees-on-Cars-·-讨论"><a href="#New-York-Bans-Subscription-and-Post-Purchase-Fees-on-Cars-·-讨论" class="headerlink" title="New York Bans Subscription and Post-Purchase Fees on Cars · 讨论"></a><a target="_blank" rel="noopener" href="https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription">New York Bans Subscription and Post-Purchase Fees on Cars</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50622774">讨论</a></h3><p>757 分 · 398 条评论 · governor.ny.gov · Hacker News</p>
+<p>纽约州通过法案，禁止汽车制造商和经销商在购车后收取内置功能订阅费（如加热座椅、导航），旨在提高价格透明度保护消费者。</p>
+<p>另见：<a target="_blank" rel="noopener" href="https://wgna.com/car-bill-extra-fees/">New York Bans Subscription and Post-Purchase Fees on Cars</a></p>
+<h3 id="Ternary-Bonsai-2-5-27B-·-讨论"><a href="#Ternary-Bonsai-2-5-27B-·-讨论" class="headerlink" title="Ternary Bonsai 2.5 27B · 讨论"></a><a target="_blank" rel="noopener" href="https://prismml.com/news/bonsai-2-5-27b">Ternary Bonsai 2.5 27B</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50633922">讨论</a></h3><p>250 分 · 78 条评论 · prismml.com · Hacker News</p>
+<p>发布Ternary Bonsai 2.5 27B大模型，在27B参数下实现5.9GB轻量化，具备更强agentic编码、多轮工具使用及多步任务执行能力。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/hardware/" rel="tag"># hardware</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/release/" rel="tag"># release</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/database/" rel="tag"># database</a>
+              <a href="/tags/agents/" rel="tag"># agents</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/25-morning" rel="prev" title="2026-11-25 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-25 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/25-evening" rel="next" title="2026-11-25 · 财经晚报">
+                  2026-11-25 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

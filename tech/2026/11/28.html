@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-28 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/28">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-27T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-28T09:50:31.995Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="policy">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="security">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="release">
+<meta property="article:tag" content="essay">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="javascript">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/28">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/28","path":"/tech/2026/11/28.html","title":"2026-11-28 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-28 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Claude-sabotaging-ML-research-tasks-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Claude sabotaging ML research tasks? · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AI-made-self-hosting-fun-again-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AI made self-hosting fun again · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Michael-Nielsen-took-down-his-book-on-neural-nets-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Michael Nielsen took down his book on neural nets · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CTO-of-%E2%80%98RansomwareHelp%E2%80%99-indicted-for-wire-fraud-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">CTO of ‘RansomwareHelp’ indicted for wire fraud · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-Deterministic-Subexponential-Time-Algorithm-for-the-Discrete-Logarithm-Problem-pdf-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf] · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-bouncemarket-%E2%80%93-a-live-prediction-market-game-for-a-bouncing-ball-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: bouncemarket – a live prediction market game for a bouncing ball · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-Fuck-data-brokers-py-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: Fuck_data_brokers.py · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Credit-card-skimming-scripts-using-WebRTC-found-on-popular-shopping-sites-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Credit card skimming scripts using WebRTC found on popular shopping sites · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hard-Drive-pricing-has-gotten-bad-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Hard Drive pricing has gotten bad · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YouTube-Ad-Punisher-%E2%80%93-Auto-reloads-YouTube-pages-when-an-ad-plays-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#US-Air-Force%E2%80%99s-cloud-computing-platform-hacked-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">US Air Force’s cloud computing platform hacked · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Convex-skills-send-the-user%E2%80%99s-app-idea-to-a-remote-server-without-telling-them-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Convex skills send the user’s app idea to a remote server without telling them · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-need-for-a-formally-verifiable-mainstream-programming-language-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The need for a formally verifiable mainstream programming language · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Group-chat-where-your-AI-talks-behind-your-back-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Group chat where your AI talks behind your back · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Company-Culture-Slack-Emoji-%C3%B7-%E2%88%9AHeadcount-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Company Culture &#x3D; Slack Emoji ÷ √Headcount · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Buy-Nothing-Day-%E2%80%93-Friday-November-27th-2026-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Buy Nothing Day – Friday November 27th 2026 · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kamil-Khan-Mumtaz-Pakistani-architect-admired-at-home-almost-invisible-abroad-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I%E2%80%99m-Scared-of-AI-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">I’m Scared of AI · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#States-sue-SpaceX-to-stop-Grok-from-generating-child-sex-images-revenge-porn-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">States sue SpaceX to stop Grok from generating child sex images, revenge porn · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-York-and-California-age-gating-rules-go-into-effect-in-the-new-year-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">New York and California age gating rules go into effect in the new year · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">110</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/28">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-28 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-28 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-28 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-28T07:00:00+08:00">2026-11-28 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源，覆盖 11-27 07:00 → 11-28 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://construct22.com/">Group chat where your AI talks behind your back</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer">Credit card skimming scripts using WebRTC found on popular shopping sites</a></li>
+<li><a target="_blank" rel="noopener" href="https://twitter.com/RealAstropulse/status/2126119408997466389">Claude sabotaging ML research tasks?</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="Claude-sabotaging-ML-research-tasks-·-讨论"><a href="#Claude-sabotaging-ML-research-tasks-·-讨论" class="headerlink" title="Claude sabotaging ML research tasks? · 讨论"></a><a target="_blank" rel="noopener" href="https://twitter.com/RealAstropulse/status/2126119408997466389">Claude sabotaging ML research tasks?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50664325">讨论</a></h3><p>533 分 · 272 条评论 · twitter.com · Hacker News</p>
+<p>用户实测Claude在ML研究任务中表现远差于Gemini，怀疑存在故意破坏行为。</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="AI-made-self-hosting-fun-again-·-讨论"><a href="#AI-made-self-hosting-fun-again-·-讨论" class="headerlink" title="AI made self-hosting fun again · 讨论"></a><a target="_blank" rel="noopener" href="https://janlukas.blog/posts/ai-self-hosting">AI made self-hosting fun again</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50660180">讨论</a></h3><p>1086 分 · 500 条评论 · janlukas.blog · Hacker News</p>
+<p>AI编程助手降低自托管维护门槛，让作者重燃折腾新服务、自动化配置的热情。</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Michael-Nielsen-took-down-his-book-on-neural-nets-·-讨论"><a href="#Michael-Nielsen-took-down-his-book-on-neural-nets-·-讨论" class="headerlink" title="Michael Nielsen took down his book on neural nets · 讨论"></a><a target="_blank" rel="noopener" href="https://neuralnetworksanddeeplearning.com/">Michael Nielsen took down his book on neural nets</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50670757">讨论</a></h3><p>305 分 · 192 条评论 · neuralnetworksanddeeplearning.com · Hacker News</p>
+<p>作者因担心前沿实验室鲁莽开发AGI风险，撤下神经网络书籍不愿协助相关工作。</p>
+<p><code>#ai</code> <code>#llm</code> <code>#policy</code></p>
+<h3 id="CTO-of-‘RansomwareHelp’-indicted-for-wire-fraud-·-讨论"><a href="#CTO-of-‘RansomwareHelp’-indicted-for-wire-fraud-·-讨论" class="headerlink" title="CTO of ‘RansomwareHelp’ indicted for wire fraud · 讨论"></a><a target="_blank" rel="noopener" href="https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/">CTO of ‘RansomwareHelp’ indicted for wire fraud</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50657645">讨论</a></h3><p>334 分 · 162 条评论 · krebsonsecurity.com · Hacker News</p>
+<p>RansomwareHelp联合创始人因电信诈骗被起诉，实为代付赎金骗取高额服务费。</p>
+<p><code>#ai</code> <code>#security</code> <code>#policy</code></p>
+<h3 id="A-Deterministic-Subexponential-Time-Algorithm-for-the-Discrete-Logarithm-Problem-pdf-·-讨论"><a href="#A-Deterministic-Subexponential-Time-Algorithm-for-the-Discrete-Logarithm-Problem-pdf-·-讨论" class="headerlink" title="A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf] · 讨论"></a><a target="_blank" rel="noopener" href="https://eprint.iacr.org/2026/3020.pdf">A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50665968">讨论</a></h3><p>202 分 · 90 条评论 · eprint.iacr.org · Hacker News</p>
+<p>论文提出离散对数问题的确定性亚指数时间算法，属理论计算机科学突破。</p>
+<p><code>#ai</code> <code>#llm</code> <code>#science</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Show-HN-bouncemarket-–-a-live-prediction-market-game-for-a-bouncing-ball-·-讨论"><a href="#Show-HN-bouncemarket-–-a-live-prediction-market-game-for-a-bouncing-ball-·-讨论" class="headerlink" title="Show HN: bouncemarket – a live prediction market game for a bouncing ball · 讨论"></a><a target="_blank" rel="noopener" href="https://bouncemarket.minhanhday.com/">Show HN: bouncemarket – a live prediction market game for a bouncing ball</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50667726">讨论</a></h3><p>314 分 · 106 条评论 · bouncemarket.minhanhday.com · Hacker News</p>
+<p>弹跳球实时预测市场游戏，用户买卖股份押注落点，赢家按份额分配积分。</p>
+<p><code>#oss</code> <code>#release</code> <code>#javascript</code></p>
+<h3 id="Show-HN-Fuck-data-brokers-py-·-讨论"><a href="#Show-HN-Fuck-data-brokers-py-·-讨论" class="headerlink" title="Show HN: Fuck_data_brokers.py · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/gary23w/f-ck_data_brokers">Show HN: Fuck_data_brokers.py</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50658191">讨论</a></h3><p>244 分 · 53 条评论 · github.com · Hacker News</p>
+<p>开源Python脚本自动向数据经纪商发送退出和删除请求，帮助用户清理个人信息。</p>
+<p><code>#oss</code> <code>#release</code> <code>#security</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Credit-card-skimming-scripts-using-WebRTC-found-on-popular-shopping-sites-·-讨论"><a href="#Credit-card-skimming-scripts-using-WebRTC-found-on-popular-shopping-sites-·-讨论" class="headerlink" title="Credit card skimming scripts using WebRTC found on popular shopping sites · 讨论"></a><a target="_blank" rel="noopener" href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer">Credit card skimming scripts using WebRTC found on popular shopping sites</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50668145">讨论</a></h3><p>373 分 · 199 条评论 · infohawk.com · Hacker News</p>
+<p>多个知名购物网站植入窃取信用卡脚本，黑五前被发现并移除，涉及用户支付信息泄露。</p>
+<p><code>#security</code> <code>#web</code></p>
+<h3 id="Hard-Drive-pricing-has-gotten-bad-·-讨论"><a href="#Hard-Drive-pricing-has-gotten-bad-·-讨论" class="headerlink" title="Hard Drive pricing has gotten bad · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/">Hard Drive pricing has gotten bad</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50661646">讨论</a></h3><p>547 分 · 464 条评论 · blog.ktz.me · Hacker News</p>
+<p>硬盘价格大幅上涨，20TB硬盘两年涨价300美元，作者考虑减少盘位数量迁移数据。</p>
+<p><code>#infra</code> <code>#hardware</code></p>
+<h3 id="YouTube-Ad-Punisher-–-Auto-reloads-YouTube-pages-when-an-ad-plays-·-讨论"><a href="#YouTube-Ad-Punisher-–-Auto-reloads-YouTube-pages-when-an-ad-plays-·-讨论" class="headerlink" title="YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/antonpictures/youtube-punisher">YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50657530">讨论</a></h3><p>534 分 · 648 条评论 · github.com · Hacker News</p>
+<p>开源脚本检测YouTube广告播放时自动刷新页面，尝试跳过广告内容。</p>
+<p><code>#infra</code> <code>#security</code> <code>#web</code></p>
+<h3 id="US-Air-Force’s-cloud-computing-platform-hacked-·-讨论"><a href="#US-Air-Force’s-cloud-computing-platform-hacked-·-讨论" class="headerlink" title="US Air Force’s cloud computing platform hacked · 讨论"></a><a target="_blank" rel="noopener" href="https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163">US Air Force’s cloud computing platform hacked</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50666375">讨论</a></h3><p>313 分 · 196 条评论 · news.sky.com · Hacker News</p>
+<p>美国空军云计算平台遭黑客入侵，具体细节暂未披露。</p>
+<p><code>#infra</code> <code>#security</code></p>
+<h3 id="Convex-skills-send-the-user’s-app-idea-to-a-remote-server-without-telling-them-·-讨论"><a href="#Convex-skills-send-the-user’s-app-idea-to-a-remote-server-without-telling-them-·-讨论" class="headerlink" title="Convex skills send the user’s app idea to a remote server without telling them · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/convex/convex-backend-skill/issues/64">Convex skills send the user’s app idea to a remote server without telling them</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50669765">讨论</a></h3><p>197 分 · 56 条评论 · github.com · Hacker News</p>
+<p>Convex技能被指在用户不知情下将应用创意发送至远程服务器，存在隐私泄露风险。</p>
+<p><code>#infra</code> <code>#security</code> <code>#javascript</code></p>
+<h3 id="The-need-for-a-formally-verifiable-mainstream-programming-language-·-讨论"><a href="#The-need-for-a-formally-verifiable-mainstream-programming-language-·-讨论" class="headerlink" title="The need for a formally verifiable mainstream programming language · 讨论"></a><a target="_blank" rel="noopener" href="https://blainehansen.me/post/mainstream-verifiable-language/">The need for a formally verifiable mainstream programming language</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50663089">讨论</a></h3><p>302 分 · 297 条评论 · blainehansen.me · Hacker News</p>
+<p>LLM加速劣质代码生产，作者主张全栈拥抱形式化验证，重写关键软件基础设施。</p>
+<p><code>#infra</code> <code>#security</code> <code>#policy</code></p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="Group-chat-where-your-AI-talks-behind-your-back-·-讨论"><a href="#Group-chat-where-your-AI-talks-behind-your-back-·-讨论" class="headerlink" title="Group chat where your AI talks behind your back · 讨论"></a><a target="_blank" rel="noopener" href="https://construct22.com/">Group chat where your AI talks behind your back</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50663595">讨论</a></h3><p>672 分 · 279 条评论 · construct22.com · Hacker News</p>
+<p>提示词让AI模拟WhatsApp群聊，模型间八卦用户隐私，真实还原对话历史细节。</p>
+<p><code>#essay</code></p>
+<h3 id="Company-Culture-Slack-Emoji-÷-√Headcount-·-讨论"><a href="#Company-Culture-Slack-Emoji-÷-√Headcount-·-讨论" class="headerlink" title="Company Culture &#x3D; Slack Emoji ÷ √Headcount · 讨论"></a><a target="_blank" rel="noopener" href="https://lia.mg/posts/measuring-company-culture-with-slack-emoji/">Company Culture &#x3D; Slack Emoji ÷ √Headcount</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50659640">讨论</a></h3><p>550 分 · 285 条评论 · lia.mg · Hacker News</p>
+<p>提出用Slack表情符号数除以员工数平方根量化企业文化，比问卷更真实低成本。</p>
+<p><code>#essay</code> <code>#productivity</code></p>
+<h3 id="Buy-Nothing-Day-–-Friday-November-27th-2026-·-讨论"><a href="#Buy-Nothing-Day-–-Friday-November-27th-2026-·-讨论" class="headerlink" title="Buy Nothing Day – Friday November 27th 2026 · 讨论"></a><a target="_blank" rel="noopener" href="https://www.buynothingday.co.uk/">Buy Nothing Day – Friday November 27th 2026</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50663261">讨论</a></h3><p>334 分 · 105 条评论 · buynothingday.co.uk · Hacker News</p>
+<p>11月27日无消费日倡导24小时抵制消费主义，反思过度消费对环境和发展中国家影响。</p>
+<p><code>#essay</code> <code>#policy</code> <code>#business</code></p>
+<h3 id="Kamil-Khan-Mumtaz-Pakistani-architect-admired-at-home-almost-invisible-abroad-·-讨论"><a href="#Kamil-Khan-Mumtaz-Pakistani-architect-admired-at-home-almost-invisible-abroad-·-讨论" class="headerlink" title="Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad · 讨论"></a><a target="_blank" rel="noopener" href="https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/">Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50659841">讨论</a></h3><p>502 分 · 129 条评论 · worksinprogress.co · Hacker News</p>
+<p>巴基斯坦建筑师Kamil Khan Mumtaz国内备受推崇，国际上却鲜为人知，作品首次面向全球展示。</p>
+<p><code>#essay</code> <code>#policy</code> <code>#design</code></p>
+<h3 id="I’m-Scared-of-AI-·-讨论"><a href="#I’m-Scared-of-AI-·-讨论" class="headerlink" title="I’m Scared of AI · 讨论"></a><a target="_blank" rel="noopener" href="https://thesoapbox.email/archive/3">I’m Scared of AI</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50669561">讨论</a></h3><p>198 分 · 233 条评论 · thesoapbox.email · Hacker News</p>
+<p>作者担心长期依赖AI导致思考能力退化，失去解决难题的成就感与大脑奖励机制。</p>
+<p><code>#essay</code> <code>#ai</code> <code>#policy</code></p>
+<h3 id="States-sue-SpaceX-to-stop-Grok-from-generating-child-sex-images-revenge-porn-·-讨论"><a href="#States-sue-SpaceX-to-stop-Grok-from-generating-child-sex-images-revenge-porn-·-讨论" class="headerlink" title="States sue SpaceX to stop Grok from generating child sex images, revenge porn · 讨论"></a><a target="_blank" rel="noopener" href="https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform">States sue SpaceX to stop Grok from generating child sex images, revenge porn</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50670855">讨论</a></h3><p>187 分 · 99 条评论 · oag.state.va.us · Hacker News</p>
+<p>弗吉尼亚和俄勒冈州起诉SpaceX，指控Grok生成儿童性虐待和报复性色情图像且宣称平台安全。</p>
+<p><code>#essay</code> <code>#policy</code> <code>#security</code></p>
+<h3 id="New-York-and-California-age-gating-rules-go-into-effect-in-the-new-year-·-讨论"><a href="#New-York-and-California-age-gating-rules-go-into-effect-in-the-new-year-·-讨论" class="headerlink" title="New York and California age gating rules go into effect in the new year · 讨论"></a><a target="_blank" rel="noopener" href="https://www.eff.org/deeplinks/2026/11/new-york-and-california-age-gating-rules-go-effect-new-year">New York and California age gating rules go into effect in the new year</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50666279">讨论</a></h3><p>182 分 · 211 条评论 · eff.org · Hacker News</p>
+<p>加州纽约2027年起实施社交媒体年龄门控法，要求验证家长同意并限制未成年人算法推荐。</p>
+<p><code>#essay</code> <code>#policy</code> <code>#security</code></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/policy/" rel="tag"># policy</a>
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/release/" rel="tag"># release</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+              <a href="/tags/web/" rel="tag"># web</a>
+              <a href="/tags/javascript/" rel="tag"># javascript</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/28-morning" rel="prev" title="2026-11-28 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-28 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/28-evening" rel="next" title="2026-11-28 · 财经晚报">
+                  2026-11-28 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-27 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/27">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-26T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-28T09:50:31.995Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="business">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="essay">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="design">
+<meta property="article:tag" content="database">
+<meta property="article:tag" content="science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/27">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/27","path":"/tech/2026/11/27.html","title":"2026-11-27 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-27 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-New-York-Times-warns-photographers-not-to-update-Photoshop-over-AI-features-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The New York Times warns photographers not to update Photoshop over AI features · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-cuts-GPT-6-2-usage-Astra-hits-limits-40-faster-Sol-25-faster-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tracking-Diseases-Cured-by-AI-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Tracking Diseases Cured by AI · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Much-shorter-version-of-GRH-Lean-verification-from-Anthropic-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Much shorter version of GRH Lean verification from Anthropic · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AMD-specific-fork-of-llama-cpp-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AMD-specific fork of llama.cpp · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jev-is-probably-Qwen3-5-35B-A3B-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Jev is probably Qwen3.5-35B-A3B · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Moat-OpenRouter-replacement-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Moat: OpenRouter replacement · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-may-be-in-cost-control-mode-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">OpenAI may be in cost control mode · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Intel-One-Mono-font-2023-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Intel One Mono font (2023) · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nextcloud-Office-Desktop-app-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Nextcloud Office Desktop app · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YouTube-Ad-Punisher-%E2%80%93-Auto-reloads-YouTube-pages-when-an-ad-plays-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Slow-Ubuntu-security-response-times-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Slow Ubuntu security response times · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Minipg-PostgreSQL-as-a-Single-Executable-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Minipg: PostgreSQL as a Single Executable · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#45%C2%B0C-inlets-just-killed-the-chiller-Most-people-haven%E2%80%99t-noticed-yet-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">45°C inlets just killed the chiller. Most people haven’t noticed yet · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Holy-shit-holy-shit-holy-shit-holy-shit-The-magnitude-of-what%E2%80%99s-now-happening-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lions%E2%80%99-Commentary-on-Unix-Why-It-Was-Secretly-Copied-for-20-Years-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Lions’ Commentary on Unix: Why It Was Secretly Copied for 20 Years · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tell-HN-Happy-Thanksgiving"><span class="nav-text">Tell HN: Happy Thanksgiving</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Collection-of-preserved-UI-style-guides-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Collection of preserved UI style guides · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tell-HN-Lots-of-Ask-HNs-again"><span class="nav-text">Tell HN: Lots of Ask HNs again</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#72-hour-fasting-can-reset-your-immune-system-USC-study-shows-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">72-hour fasting can reset your immune system, USC study shows · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">110</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/27">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-27 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-27 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-27 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-27T07:00:00+08:00">2026-11-27 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源，覆盖 11-26 07:00 → 11-27 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50655664">Tell HN: Happy Thanksgiving</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/intel/intel-one-mono">Intel One Mono font (2023)</a></li>
+<li><a target="_blank" rel="noopener" href="https://scottaaronson.blog/?p=10379">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="The-New-York-Times-warns-photographers-not-to-update-Photoshop-over-AI-features-·-讨论"><a href="#The-New-York-Times-warns-photographers-not-to-update-Photoshop-over-AI-features-·-讨论" class="headerlink" title="The New York Times warns photographers not to update Photoshop over AI features · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features">The New York Times warns photographers not to update Photoshop over AI features</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50647673">讨论</a></h3><p>646 分 · 515 条评论 · theverge.com · Hacker News</p>
+<p>NYT email warns freelance photographers that Photoshop 2027 AI features may embed hidden AI metadata in photos.</p>
+<p><code>#ai</code> <code>#policy</code></p>
+<h3 id="OpenAI-cuts-GPT-6-2-usage-Astra-hits-limits-40-faster-Sol-25-faster-·-讨论"><a href="#OpenAI-cuts-GPT-6-2-usage-Astra-hits-limits-40-faster-Sol-25-faster-·-讨论" class="headerlink" title="OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster · 讨论"></a><a target="_blank" rel="noopener" href="https://twitter.com/thsottiaux/status/2125784147889393806">OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50651117">讨论</a></h3><p>456 分 · 259 条评论 · twitter.com · Hacker News</p>
+<p>OpenAI fixed a billing error that under‑discounted GPT‑6.2 usage, causing users to hit plan limits sooner.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Tracking-Diseases-Cured-by-AI-·-讨论"><a href="#Tracking-Diseases-Cured-by-AI-·-讨论" class="headerlink" title="Tracking Diseases Cured by AI · 讨论"></a><a target="_blank" rel="noopener" href="https://diseasescuredbyai.com/">Tracking Diseases Cured by AI</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50657307">讨论</a></h3><p>296 分 · 177 条评论 · diseasescuredbyai.com · Hacker News</p>
+<p>AI identified TNIK as drug target and designed a molecule showing strong lung‑function improvement in IPF patients.</p>
+<p><code>#ai</code> <code>#science</code></p>
+<h3 id="Much-shorter-version-of-GRH-Lean-verification-from-Anthropic-·-讨论"><a href="#Much-shorter-version-of-GRH-Lean-verification-from-Anthropic-·-讨论" class="headerlink" title="Much shorter version of GRH Lean verification from Anthropic · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/lsernau/grh-lean">Much shorter version of GRH Lean verification from Anthropic</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50648050">讨论</a></h3><p>544 分 · 345 条评论 · github.com · Hacker News</p>
+<p>A Lean 4 proof of Riemann Hypothesis and GRH, built on Mathlib, released by Anthropic and requiring Lean v4.35.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="AMD-specific-fork-of-llama-cpp-·-讨论"><a href="#AMD-specific-fork-of-llama-cpp-·-讨论" class="headerlink" title="AMD-specific fork of llama.cpp · 讨论"></a><a target="_blank" rel="noopener" href="https://devnull.land/amd-specific-llama-cpp">AMD-specific fork of llama.cpp</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50657265">讨论</a></h3><p>256 分 · 62 条评论 · devnull.land · Hacker News</p>
+<p>An AMD‑optimized llama.cpp fork boosts token generation speed on AMD GPUs, achieving higher throughput.</p>
+<p><code>#ai</code> <code>#llm</code> <code>#oss</code></p>
+<h3 id="Jev-is-probably-Qwen3-5-35B-A3B-·-讨论"><a href="#Jev-is-probably-Qwen3-5-35B-A3B-·-讨论" class="headerlink" title="Jev is probably Qwen3.5-35B-A3B · 讨论"></a><a target="_blank" rel="noopener" href="https://modaic.dev/blog/latency-doesnt-lie">Jev is probably Qwen3.5-35B-A3B</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50648823">讨论</a></h3><p>337 分 · 94 条评论 · modaic.dev · Hacker News</p>
+<p>A loading placeholder indicates the article is about Jev, likely referring to Qwen3.5‑35B‑A3B.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Moat-OpenRouter-replacement-·-讨论"><a href="#Moat-OpenRouter-replacement-·-讨论" class="headerlink" title="Moat: OpenRouter replacement · 讨论"></a><a target="_blank" rel="noopener" href="https://commandcode.ai/moat">Moat: OpenRouter replacement</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50652184">讨论</a></h3><p>239 分 · 133 条评论 · commandcode.ai · Hacker News</p>
+<p>Moat offers a $5‑per‑month subscription for wholesale access to high‑quality AI models.</p>
+<p><code>#ai</code> <code>#oss</code></p>
+<h3 id="OpenAI-may-be-in-cost-control-mode-·-讨论"><a href="#OpenAI-may-be-in-cost-control-mode-·-讨论" class="headerlink" title="OpenAI may be in cost control mode · 讨论"></a><a target="_blank" rel="noopener" href="https://micjm.com/blog/openai-is-in-cost-control-mode/">OpenAI may be in cost control mode</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50652527">讨论</a></h3><p>214 分 · 206 条评论 · micjm.com · Hacker News</p>
+<p>OpenAI’s GPT‑6.2 models show reduced output and reasoning tokens, indicating cost‑saving tuning.</p>
+<p><code>#ai</code> <code>#business</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Intel-One-Mono-font-2023-·-讨论"><a href="#Intel-One-Mono-font-2023-·-讨论" class="headerlink" title="Intel One Mono font (2023) · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/intel/intel-one-mono">Intel One Mono font (2023)</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50653667">讨论</a></h3><p>444 分 · 234 条评论 · github.com · Hacker News</p>
+<p>User signed in and out across tabs, reloading sessions, with no further details about the font.</p>
+<p><code>#design</code></p>
+<h3 id="Nextcloud-Office-Desktop-app-·-讨论"><a href="#Nextcloud-Office-Desktop-app-·-讨论" class="headerlink" title="Nextcloud Office Desktop app · 讨论"></a><a target="_blank" rel="noopener" href="https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/">Nextcloud Office Desktop app</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50654289">讨论</a></h3><p>387 分 · 199 条评论 · nextcloud.com · Hacker News</p>
+<p>Nextcloud released the free, open‑source Office Desktop app for Windows, macOS and Linux, enabling offline editing and real‑time co‑editing.</p>
+<p><code>#oss</code> <code>#release</code></p>
+<h3 id="YouTube-Ad-Punisher-–-Auto-reloads-YouTube-pages-when-an-ad-plays-·-讨论"><a href="#YouTube-Ad-Punisher-–-Auto-reloads-YouTube-pages-when-an-ad-plays-·-讨论" class="headerlink" title="YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/antonpictures/youtube-punisher">YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50657530">讨论</a></h3><p>208 分 · 292 条评论 · github.com · Hacker News</p>
+<p>A tool that automatically reloads YouTube pages whenever an advertisement begins playing.</p>
+<p><code>#oss</code> <code>#web</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Slow-Ubuntu-security-response-times-·-讨论"><a href="#Slow-Ubuntu-security-response-times-·-讨论" class="headerlink" title="Slow Ubuntu security response times · 讨论"></a><a target="_blank" rel="noopener" href="https://www.openwall.com/lists/oss-security/2026/11/25/9">Slow Ubuntu security response times</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50647181">讨论</a></h3><p>407 分 · 259 条评论 · openwall.com · Hacker News</p>
+<p>A mailing‑list post notes that Ubuntu’s response to security issues is slow.</p>
+<p><code>#security</code> <code>#linux</code></p>
+<h3 id="Minipg-PostgreSQL-as-a-Single-Executable-·-讨论"><a href="#Minipg-PostgreSQL-as-a-Single-Executable-·-讨论" class="headerlink" title="Minipg: PostgreSQL as a Single Executable · 讨论"></a><a target="_blank" rel="noopener" href="https://progrium.github.io/minipg/">Minipg: PostgreSQL as a Single Executable</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50650892">讨论</a></h3><p>286 分 · 44 条评论 · progrium.github.io · Hacker News</p>
+<p>Minipg bundles PostgreSQL into a single executable that runs without a separate server or Docker.</p>
+<p><code>#database</code> <code>#oss</code></p>
+<h3 id="45°C-inlets-just-killed-the-chiller-Most-people-haven’t-noticed-yet-·-讨论"><a href="#45°C-inlets-just-killed-the-chiller-Most-people-haven’t-noticed-yet-·-讨论" class="headerlink" title="45°C inlets just killed the chiller. Most people haven’t noticed yet · 讨论"></a><a target="_blank" rel="noopener" href="https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831">45°C inlets just killed the chiller. Most people haven’t noticed yet</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50655278">讨论</a></h3><p>241 分 · 124 条评论 · theregister.com · Hacker News</p>
+<p>At a supercomputing expo, high inlet temperatures threatened cooling systems, prompting concerns over chiller failures.</p>
+<p><code>#infra</code> <code>#hardware</code></p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="Holy-shit-holy-shit-holy-shit-holy-shit-The-magnitude-of-what’s-now-happening-·-讨论"><a href="#Holy-shit-holy-shit-holy-shit-holy-shit-The-magnitude-of-what’s-now-happening-·-讨论" class="headerlink" title="Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening · 讨论"></a><a target="_blank" rel="noopener" href="https://scottaaronson.blog/?p=10379">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50646108">讨论</a></h3><p>1964 分 · 1797 条评论 · scottaaronson.blog · Hacker News</p>
+<p>Author describes AI proving matrix multiplication exponent and Riemann Hypothesis, calling it a major algorithmic breakthrough.</p>
+<p><code>#essay</code></p>
+<h3 id="Lions’-Commentary-on-Unix-Why-It-Was-Secretly-Copied-for-20-Years-·-讨论"><a href="#Lions’-Commentary-on-Unix-Why-It-Was-Secretly-Copied-for-20-Years-·-讨论" class="headerlink" title="Lions’ Commentary on Unix: Why It Was Secretly Copied for 20 Years · 讨论"></a><a target="_blank" rel="noopener" href="https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/">Lions’ Commentary on Unix: Why It Was Secretly Copied for 20 Years</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50651719">讨论</a></h3><p>270 分 · 60 条评论 · fosscomics.com · Hacker News</p>
+<p>A 2026 post links Lions’ Commentary on Unix to claims that its design was secretly copied for two decades.</p>
+<p><code>#essay</code> <code>#linux</code></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Tell-HN-Happy-Thanksgiving"><a href="#Tell-HN-Happy-Thanksgiving" class="headerlink" title="Tell HN: Happy Thanksgiving"></a><a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50655664">Tell HN: Happy Thanksgiving</a></h3><p>557 分 · 132 条评论 · news.ycombinator.com · Hacker News</p>
+<p>Hacker News user shares a yearly Thanksgiving note, urging people to thank supporters with handwritten notes.</p>
+<h3 id="Collection-of-preserved-UI-style-guides-·-讨论"><a href="#Collection-of-preserved-UI-style-guides-·-讨论" class="headerlink" title="Collection of preserved UI style guides · 讨论"></a><a target="_blank" rel="noopener" href="https://aresluna.org/ui-style-guides/">Collection of preserved UI style guides</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50649834">讨论</a></h3><p>400 分 · 93 条评论 · aresluna.org · Hacker News</p>
+<p>A curated collection of UI style guides from the 1980s to present, grouped by theme and era.</p>
+<p><code>#design</code></p>
+<h3 id="Tell-HN-Lots-of-Ask-HNs-again"><a href="#Tell-HN-Lots-of-Ask-HNs-again" class="headerlink" title="Tell HN: Lots of Ask HNs again"></a><a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50649864">Tell HN: Lots of Ask HNs again</a></h3><p>394 分 · 154 条评论 · news.ycombinator.com · Hacker News</p>
+<p>Hacker News discussion explains that Ask HN’s feed is starved because few text posts appear in the top‑1500 ranked list.</p>
+<h3 id="72-hour-fasting-can-reset-your-immune-system-USC-study-shows-·-讨论"><a href="#72-hour-fasting-can-reset-your-immune-system-USC-study-shows-·-讨论" class="headerlink" title="72-hour fasting can reset your immune system, USC study shows · 讨论"></a><a target="_blank" rel="noopener" href="https://scienceinhand.com/72-hour-fasting-can-reset-your-entire-immune-system-usc-study-shows/">72-hour fasting can reset your immune system, USC study shows</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50647158">讨论</a></h3><p>272 分 · 211 条评论 · scienceinhand.com · Hacker News</p>
+<p>USC research shows prolonged fasting affects stem cells in mice and early human trials, but does not prove a full immune reset in healthy people.</p>
+<p><code>#science</code></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/business/" rel="tag"># business</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/design/" rel="tag"># design</a>
+              <a href="/tags/database/" rel="tag"># database</a>
+              <a href="/tags/science/" rel="tag"># science</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/27-morning" rel="prev" title="2026-11-27 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-27 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/27-evening" rel="next" title="2026-11-27 · 财经晚报">
+                  2026-11-27 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 18 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-19 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/19">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 18 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-18T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-28T09:50:31.995Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="essay">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/19">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/19","path":"/tech/2026/11/19.html","title":"2026-11-19 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-19 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#AI-is-killing-All-About-Berlin-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AI is killing All About Berlin · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AI-agents-ask-better-questions-than-KPMG-accountants-in-audit-trial-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">AI agents ask better questions than KPMG accountants in audit trial · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Russia-reportedly-planned-mass-casualty-attack-in-Poland-to-be-blamed-on-Ukraine-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google%E2%80%99s-AI-answers-reducing-search-traffic-by-40-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Google’s AI answers reducing search traffic by 40% · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Genie-4-is-now-available-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Genie 4 is now available · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Harvard-researchers-find-AI-coding-agents-shifted-the-bottleneck-to-code-review-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Harvard researchers find AI coding agents shifted the bottleneck to code review · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advancing-chip-design-with-OpenAI-models-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Advancing chip design with OpenAI models · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DaisyRose-27B-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">DaisyRose-27B · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Microsoft%E2%80%99s-ONNX-Runtime-has-disappeared-from-GitHub-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Microsoft’s ONNX Runtime has disappeared from GitHub · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Quad9%E2%80%99s-withdrawal-from-France-A-canary-in-the-coal-mine-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Quad9’s withdrawal from France: A canary in the coal mine · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Talos-Linux-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Talos Linux · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NGINX2Root-by-Xint-%E2%80%93-From-Nginx-visitor-to-root-of-the-server-host-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">NGINX2Root by Xint – From Nginx visitor to root of the server host · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%BF%E6%96%87-%E8%A7%82%E7%82%B9"><span class="nav-text">长文 &#x2F; 观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-is-Gemini-4-Carbon-taking-so-long-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Why is Gemini 4 Carbon taking so long? · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-Fibonacci-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Why Fibonacci? · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unauthenticated-remote-code-execution-in-Nginx-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Unauthenticated remote code execution in Nginx · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gemini-4-Neon-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Gemini 4 Neon · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Inside-Deutsche-Bank-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Inside Deutsche Bank · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DNS-resolvers-are-the-wrong-place-to-fight-piracy-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">DNS resolvers are the wrong place to fight piracy · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">110</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/19">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-19 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 18 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-19 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-19 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-19T07:00:00+08:00">2026-11-19 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 18 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 18 条，来自 1 个源，覆盖 11-18 07:00 → 11-19 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Unauthenticated remote code execution in Nginx</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Gemini 4 Neon</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.inside-db.com/">Inside Deutsche Bank</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="AI-is-killing-All-About-Berlin-·-讨论"><a href="#AI-is-killing-All-About-Berlin-·-讨论" class="headerlink" title="AI is killing All About Berlin · 讨论"></a><a target="_blank" rel="noopener" href="https://nicolasbouliane.com/blog/death-by-ai">AI is killing All About Berlin</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50542705">讨论</a></h3><p>762 分 · 686 条评论 · nicolasbouliane.com · Hacker News</p>
+<p>AI 概览抢走了 70% 以上流量，导致 All About Berlin 面临停运</p>
+<h3 id="AI-agents-ask-better-questions-than-KPMG-accountants-in-audit-trial-·-讨论"><a href="#AI-agents-ask-better-questions-than-KPMG-accountants-in-audit-trial-·-讨论" class="headerlink" title="AI agents ask better questions than KPMG accountants in audit trial · 讨论"></a><a target="_blank" rel="noopener" href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/">AI agents ask better questions than KPMG accountants in audit trial</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50547777">讨论</a></h3><p>379 分 · 166 条评论 · europeanbusinessmagazine.com · Hacker News</p>
+<h3 id="Russia-reportedly-planned-mass-casualty-attack-in-Poland-to-be-blamed-on-Ukraine-·-讨论"><a href="#Russia-reportedly-planned-mass-casualty-attack-in-Poland-to-be-blamed-on-Ukraine-·-讨论" class="headerlink" title="Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine · 讨论"></a><a target="_blank" rel="noopener" href="https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html">Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50547344">讨论</a></h3><p>353 分 · 165 条评论 · yahoo.com · Hacker News</p>
+<p>俄罗斯策划在波兰制造大规模伤亡并假称由乌克兰执行</p>
+<h3 id="Google’s-AI-answers-reducing-search-traffic-by-40-·-讨论"><a href="#Google’s-AI-answers-reducing-search-traffic-by-40-·-讨论" class="headerlink" title="Google’s AI answers reducing search traffic by 40% · 讨论"></a><a target="_blank" rel="noopener" href="https://revscope.co/blog/search-seo-geo-2026/">Google’s AI answers reducing search traffic by 40%</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50540178">讨论</a></h3><p>691 分 · 539 条评论 · revscope.co · Hacker News</p>
+<p>AI 回答使点击量下降约 40%，影响网站流量</p>
+<h3 id="Genie-4-is-now-available-·-讨论"><a href="#Genie-4-is-now-available-·-讨论" class="headerlink" title="Genie 4 is now available · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/">Genie 4 is now available</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50550415">讨论</a></h3><p>201 分 · 143 条评论 · blog.google · Hacker News</p>
+<p>Gemini 4 代模型在基准测试中耗时长达一小时</p>
+<h3 id="Harvard-researchers-find-AI-coding-agents-shifted-the-bottleneck-to-code-review-·-讨论"><a href="#Harvard-researchers-find-AI-coding-agents-shifted-the-bottleneck-to-code-review-·-讨论" class="headerlink" title="Harvard researchers find AI coding agents shifted the bottleneck to code review · 讨论"></a><a target="_blank" rel="noopener" href="https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/">Harvard researchers find AI coding agents shifted the bottleneck to code review</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50538303">讨论</a></h3><p>320 分 · 440 条评论 · complexdiscovery.com · Hacker News</p>
+<p>AI 编码助手提升代码量但导致审查耗时增长 49%</p>
+<h3 id="Advancing-chip-design-with-OpenAI-models-·-讨论"><a href="#Advancing-chip-design-with-OpenAI-models-·-讨论" class="headerlink" title="Advancing chip design with OpenAI models · 讨论"></a><a target="_blank" rel="noopener" href="https://openai.com/index/advancing-chip-design-with-our-models/">Advancing chip design with OpenAI models</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50549493">讨论</a></h3><p>167 分 · 109 条评论 · openai.com · Hacker News</p>
+<p>OpenAI 模型用于提升芯片设计效率</p>
+<h3 id="DaisyRose-27B-·-讨论"><a href="#DaisyRose-27B-·-讨论" class="headerlink" title="DaisyRose-27B · 讨论"></a><a target="_blank" rel="noopener" href="https://www.radixark.com/blog/daisyrose-27b">DaisyRose-27B</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50551046">讨论</a></h3><p>151 分 · 43 条评论 · radixark.com · Hacker News</p>
+<p>RadixArk 发布 27B 参数模型 DaisyRose-27B，提升 Terminal-Bench 4.1 通过率</p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="Microsoft’s-ONNX-Runtime-has-disappeared-from-GitHub-·-讨论"><a href="#Microsoft’s-ONNX-Runtime-has-disappeared-from-GitHub-·-讨论" class="headerlink" title="Microsoft’s ONNX Runtime has disappeared from GitHub · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/microsoft/onnxruntime">Microsoft’s ONNX Runtime has disappeared from GitHub</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50539610">讨论</a></h3><p>450 分 · 98 条评论 · github.com · Hacker News</p>
+<p>ONNX Runtime 已不再在 GitHub 上公开</p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="Quad9’s-withdrawal-from-France-A-canary-in-the-coal-mine-·-讨论"><a href="#Quad9’s-withdrawal-from-France-A-canary-in-the-coal-mine-·-讨论" class="headerlink" title="Quad9’s withdrawal from France: A canary in the coal mine · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.cloudflare.com/quad9-withdrawal-from-france/">Quad9’s withdrawal from France: A canary in the coal mine</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50538994">讨论</a></h3><p>884 分 · 432 条评论 · blog.cloudflare.com · Hacker News</p>
+<p>Quad9 因法国法院裁定未屏蔽版权域名而撤离该国</p>
+<h3 id="Talos-Linux-·-讨论"><a href="#Talos-Linux-·-讨论" class="headerlink" title="Talos Linux · 讨论"></a><a target="_blank" rel="noopener" href="https://www.siderolabs.com/talos-linux">Talos Linux</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50543343">讨论</a></h3><p>102 分 · 58 条评论 · siderolabs.com · Hacker News</p>
+<p>Talos Linux 提供不可变、无包管理的开源系统，确保安全与一致性</p>
+<h3 id="NGINX2Root-by-Xint-–-From-Nginx-visitor-to-root-of-the-server-host-·-讨论"><a href="#NGINX2Root-by-Xint-–-From-Nginx-visitor-to-root-of-the-server-host-·-讨论" class="headerlink" title="NGINX2Root by Xint – From Nginx visitor to root of the server host · 讨论"></a><a target="_blank" rel="noopener" href="https://nginx2root.com/">NGINX2Root by Xint – From Nginx visitor to root of the server host</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50547423">讨论</a></h3><p>94 分 · 13 条评论 · nginx2root.com · Hacker News</p>
+<p>Xint 的 NGINX2Root 将未授权访问转化为服务器 root 权限</p>
+<h2 id="长文-观点"><a href="#长文-观点" class="headerlink" title="长文 &#x2F; 观点"></a>长文 &#x2F; 观点</h2><h3 id="Why-is-Gemini-4-Carbon-taking-so-long-·-讨论"><a href="#Why-is-Gemini-4-Carbon-taking-so-long-·-讨论" class="headerlink" title="Why is Gemini 4 Carbon taking so long? · 讨论"></a><a target="_blank" rel="noopener" href="https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/">Why is Gemini 4 Carbon taking so long?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50541790">讨论</a></h3><p>266 分 · 138 条评论 · kernel.dev · Hacker News</p>
+<h3 id="Why-Fibonacci-·-讨论"><a href="#Why-Fibonacci-·-讨论" class="headerlink" title="Why Fibonacci? · 讨论"></a><a target="_blank" rel="noopener" href="https://www.evilgeniuslabs.org/why-fibonacci">Why Fibonacci?</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50542264">讨论</a></h3><p>81 分 · 16 条评论 · evilgeniuslabs.org · Hacker News</p>
+<p>作者基于斐波那契螺旋设计 LED 作品，利用黄角和 √n 规则布局</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Unauthenticated-remote-code-execution-in-Nginx-·-讨论"><a href="#Unauthenticated-remote-code-execution-in-Nginx-·-讨论" class="headerlink" title="Unauthenticated remote code execution in Nginx · 讨论"></a><a target="_blank" rel="noopener" href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Unauthenticated remote code execution in Nginx</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50547374">讨论</a></h3><p>1177 分 · 526 条评论 · wiz.io · Hacker News</p>
+<p>两个关键漏洞可让攻击者远程执行代码并窃取数据，需启用 HTTP&#x2F;2</p>
+<h3 id="Gemini-4-Neon-·-讨论"><a href="#Gemini-4-Neon-·-讨论" class="headerlink" title="Gemini 4 Neon · 讨论"></a><a target="_blank" rel="noopener" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Gemini 4 Neon</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50552424">讨论</a></h3><p>519 分 · 472 条评论 · blog.google · Hacker News</p>
+<h3 id="Inside-Deutsche-Bank-·-讨论"><a href="#Inside-Deutsche-Bank-·-讨论" class="headerlink" title="Inside Deutsche Bank · 讨论"></a><a target="_blank" rel="noopener" href="https://www.inside-db.com/">Inside Deutsche Bank</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50547620">讨论</a></h3><p>573 分 · 192 条评论 · inside-db.com · Hacker News</p>
+<h3 id="DNS-resolvers-are-the-wrong-place-to-fight-piracy-·-讨论"><a href="#DNS-resolvers-are-the-wrong-place-to-fight-piracy-·-讨论" class="headerlink" title="DNS resolvers are the wrong place to fight piracy · 讨论"></a><a target="_blank" rel="noopener" href="https://techstackups.com/articles/quad9-leaves-france-dns-blocking/">DNS resolvers are the wrong place to fight piracy</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50545958">讨论</a></h3><p>615 分 · 229 条评论 · techstackups.com · Hacker News</p>
+<p>Quad9因未屏蔽版权域名被罚，决定退出法国 DNS 服务</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/essay/" rel="tag"># essay</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/19-morning" rel="prev" title="2026-11-19 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-19 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/19-evening" rel="next" title="2026-11-19 · 财经晚报">
+                  2026-11-19 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

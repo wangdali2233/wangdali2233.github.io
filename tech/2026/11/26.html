@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wangdali2233.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026-11-26 · 技术信息聚合">
+<meta property="og:url" content="https://wangdali2233.github.io/tech/2026/11/26">
+<meta property="og:site_name" content="每日信息">
+<meta property="og:description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-11-25T23:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-28T09:50:31.995Z">
+<meta property="article:author" content="wangdali2233">
+<meta property="article:tag" content="ai">
+<meta property="article:tag" content="security">
+<meta property="article:tag" content="infra">
+<meta property="article:tag" content="oss">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="release">
+<meta property="article:tag" content="design">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="rust">
+<meta property="article:tag" content="graphics">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wangdali2233.github.io/tech/2026/11/26">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://wangdali2233.github.io/tech/2026/11/26","path":"/tech/2026/11/26.html","title":"2026-11-26 · 技术信息聚合"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>2026-11-26 · 技术信息聚合 | 每日信息</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="每日信息" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">每日信息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-技术"><a href="/categories/tech/" rel="section"><i class="fa fa-microchip fa-fw"></i>技术</a></li><li class="menu-item menu-item-财经"><a href="/categories/finance/" rel="section"><i class="fa fa-line-chart fa-fw"></i>财经</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E8%A6%81%E7%82%B9"><span class="nav-text">今日要点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI-%E6%A8%A1%E5%9E%8B"><span class="nav-text">AI &#x2F; 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Rumors-swirling-that-labs-might-have-cracked-Factoring-in-P-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Rumors swirling that labs might have cracked Factoring in P · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Button-Sounds-%E2%80%93-collection-of-professionally-recorded-button-clicks-and-presses-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Button Sounds – collection of professionally-recorded button clicks and presses · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-few-questions-for-the-guy-who-went-snorkeling-in-a-Home-Depot-retention-pond-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">A few questions for the guy who went snorkeling in a Home Depot retention pond · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-HN-Old-Nvidia-and-ATI-tech-demos-running-again-in-the-browser-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Show HN: Old Nvidia and ATI tech demos, running again in the browser · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anthropic-Staff-Openly-Talk-About-%E2%80%98Taking-Over-the-World%E2%80%99-Claims-Max-Tegmark-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gemini-refused-to-give-me-the-lyrics-to-Twinkle-Twinkle-Little-Star-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Gemini refused to give me the lyrics to Twinkle Twinkle Little Star · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E6%BA%90-%E5%B7%A5%E5%85%B7"><span class="nav-text">开源 &#x2F; 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-matrix-multiplication-exponent-is-nine-fourths-pdf-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">The matrix multiplication exponent is nine fourths [pdf] · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Models-Can-Communicate-via-Inference-Servers-Despite-Being-Sandboxed-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Models Can Communicate via Inference Servers Despite Being Sandboxed · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-Loudness-Equalization-reverse-engineered-and-ported-to-PipeWire-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Windows Loudness Equalization, reverse-engineered and ported to PipeWire · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Investigating-degraded-experiences-across-GitHub-products-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Investigating degraded experiences across GitHub products · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I-checked-Clojure%E2%80%99s-core-with-Lean-and-found-unreported-bugs-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">I checked Clojure’s core with Lean and found unreported bugs · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD"><span class="nav-text">基础设施</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1Password-Security-Incident-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">1Password Security Incident · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ternary-Bonsai-2-5-27B-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Ternary Bonsai 2.5 27B · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bypassing-iOS-Safari%E2%80%99s-60-FPS-Limit-to-Build-Web-Applications-That-Feel-Native-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Bypassing iOS Safari’s 60 FPS Limit to Build Web Applications That Feel Native · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Heart-attack-and-stroke-risk-detectable-decades-in-advance-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Heart attack and stroke risk detectable decades in advance · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Taking-over-US-Treasury-subdomains-for-3-each-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Taking over US Treasury subdomains for $3 each · 讨论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Holy-shit-holy-shit-holy-shit-holy-shit-The-magnitude-of-what%E2%80%99s-now-happening-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google-releases-Cogentic-papers-on-integer-factorization-discrete-logs-and-more-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">Google releases Cogentic papers on integer factorization, discrete logs and more · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PenGPT-A-Generative-Transformer-for-Handwriting-and-Sketches-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">PenGPT: A Generative Transformer for Handwriting and Sketches · 讨论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPT-6-models-demonstrate-intrinsic-protein-design-capabilities-%C2%B7-%E8%AE%A8%E8%AE%BA"><span class="nav-text">GPT-6 models demonstrate intrinsic protein-design capabilities · 讨论</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">wangdali2233</p>
+  <div class="site-description" itemprop="description">技术信息聚合 · 财经，每天更新</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">110</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">35</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/wangdali2233" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wangdali2233" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wangdali2233.github.io/tech/2026/11/26">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wangdali2233">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="每日信息">
+      <meta itemprop="description" content="技术信息聚合 · 财经，每天更新">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="2026-11-26 · 技术信息聚合 | 每日信息">
+      <meta itemprop="description" content="今日 20 条 · 1 个源 · AI &#x2F; 模型、开源 &#x2F; 工具、基础设施">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2026-11-26 · 技术信息聚合
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-11-26 07:00  " itemprop="dateCreated datePublished" datetime="2026-11-26T07:00:00+08:00">2026-11-26 07:00</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">今日 20 条 · 1 个源 · AI / 模型、开源 / 工具、基础设施</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本期收录 20 条，来自 1 个源，覆盖 11-25 07:00 → 11-26 07:00。</p>
+<h2 id="今日要点"><a href="#今日要点" class="headerlink" title="今日要点"></a>今日要点</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://1password.com/blog/update-on-nov-2026-security-incident">1Password Security Incident</a></li>
+<li><a target="_blank" rel="noopener" href="https://scottaaronson.blog/?p=10379">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/">Rumors swirling that labs might have cracked Factoring in P</a></li>
+</ol>
+<span id="more"></span>
+
+<h2 id="AI-模型"><a href="#AI-模型" class="headerlink" title="AI &#x2F; 模型"></a>AI &#x2F; 模型</h2><h3 id="Rumors-swirling-that-labs-might-have-cracked-Factoring-in-P-·-讨论"><a href="#Rumors-swirling-that-labs-might-have-cracked-Factoring-in-P-·-讨论" class="headerlink" title="Rumors swirling that labs might have cracked Factoring in P · 讨论"></a><a target="_blank" rel="noopener" href="https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/">Rumors swirling that labs might have cracked Factoring in P</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50643065">讨论</a></h3><p>447 分 · 325 条评论 · reddit.com · Hacker News</p>
+<p>Rumors claim labs have cracked integer factoring, though no details are provided.</p>
+<p><code>#ai</code> <code>#science</code></p>
+<h3 id="Button-Sounds-–-collection-of-professionally-recorded-button-clicks-and-presses-·-讨论"><a href="#Button-Sounds-–-collection-of-professionally-recorded-button-clicks-and-presses-·-讨论" class="headerlink" title="Button Sounds – collection of professionally-recorded button clicks and presses · 讨论"></a><a target="_blank" rel="noopener" href="https://buttons.joshwcomeau.com/">Button Sounds – collection of professionally-recorded button clicks and presses</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50638032">讨论</a></h3><p>829 分 · 130 条评论 · buttons.joshwcomeau.com · Hacker News</p>
+<p>A collection of professionally-recorded button clicks and presses is described, with no additional details.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="A-few-questions-for-the-guy-who-went-snorkeling-in-a-Home-Depot-retention-pond-·-讨论"><a href="#A-few-questions-for-the-guy-who-went-snorkeling-in-a-Home-Depot-retention-pond-·-讨论" class="headerlink" title="A few questions for the guy who went snorkeling in a Home Depot retention pond · 讨论"></a><a target="_blank" rel="noopener" href="https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts">A few questions for the guy who went snorkeling in a Home Depot retention pond</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50643129">讨论</a></h3><p>418 分 · 99 条评论 · vox.com · Hacker News</p>
+<p>Biologist Joseph Ricketts snorkeled in a Home Depot retention pond, filmed life there, and the video reached over 2 million views.</p>
+<p><code>#ai</code> <code>#security</code></p>
+<h3 id="Show-HN-Old-Nvidia-and-ATI-tech-demos-running-again-in-the-browser-·-讨论"><a href="#Show-HN-Old-Nvidia-and-ATI-tech-demos-running-again-in-the-browser-·-讨论" class="headerlink" title="Show HN: Old Nvidia and ATI tech demos, running again in the browser · 讨论"></a><a target="_blank" rel="noopener" href="https://gpu-demo-gallery.pages.dev/">Show HN: Old Nvidia and ATI tech demos, running again in the browser</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50638503">讨论</a></h3><p>328 分 · 72 条评论 · gpu-demo-gallery.pages.dev · Hacker News</p>
+<p>A showcase of vintage Nvidia and ATI tech demos running in browsers, featuring 3D shapes, effects and animations.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h3 id="Anthropic-Staff-Openly-Talk-About-‘Taking-Over-the-World’-Claims-Max-Tegmark-·-讨论"><a href="#Anthropic-Staff-Openly-Talk-About-‘Taking-Over-the-World’-Claims-Max-Tegmark-·-讨论" class="headerlink" title="Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark · 讨论"></a><a target="_blank" rel="noopener" href="https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/">Anthropic Staff Openly Talk About ‘Taking Over the World’, Claims Max Tegmark</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50631210">讨论</a></h3><p>223 分 · 135 条评论 · novaramedia.com · Hacker News</p>
+<p>Max Tegmark claims Anthropic staff, after drinking, discuss overthrowing the US government and taking over the world, using the phrase “alignment without control”.</p>
+<p><code>#ai</code></p>
+<h3 id="Gemini-refused-to-give-me-the-lyrics-to-Twinkle-Twinkle-Little-Star-·-讨论"><a href="#Gemini-refused-to-give-me-the-lyrics-to-Twinkle-Twinkle-Little-Star-·-讨论" class="headerlink" title="Gemini refused to give me the lyrics to Twinkle Twinkle Little Star · 讨论"></a><a target="_blank" rel="noopener" href="https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F">Gemini refused to give me the lyrics to Twinkle Twinkle Little Star</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50638320">讨论</a></h3><p>214 分 · 165 条评论 · comentr.com · Hacker News</p>
+<p>Gemini attempted to provide the lyrics to “Twinkle Twinkle Little Star” but repeatedly retracted them, refusing to share the full text.</p>
+<p><code>#ai</code> <code>#llm</code></p>
+<h2 id="开源-工具"><a href="#开源-工具" class="headerlink" title="开源 &#x2F; 工具"></a>开源 &#x2F; 工具</h2><h3 id="The-matrix-multiplication-exponent-is-nine-fourths-pdf-·-讨论"><a href="#The-matrix-multiplication-exponent-is-nine-fourths-pdf-·-讨论" class="headerlink" title="The matrix multiplication exponent is nine fourths [pdf] · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">The matrix multiplication exponent is nine fourths [pdf]</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50637220">讨论</a></h3><p>1015 分 · 562 条评论 · github.com · Hacker News</p>
+<p>A paper titled “The matrix multiplication exponent is nine fourths” is mentioned, with no further content.</p>
+<p><code>#design</code></p>
+<h3 id="Models-Can-Communicate-via-Inference-Servers-Despite-Being-Sandboxed-·-讨论"><a href="#Models-Can-Communicate-via-Inference-Servers-Despite-Being-Sandboxed-·-讨论" class="headerlink" title="Models Can Communicate via Inference Servers Despite Being Sandboxed · 讨论"></a><a target="_blank" rel="noopener" href="https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being">Models Can Communicate via Inference Servers Despite Being Sandboxed</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50637686">讨论</a></h3><p>444 分 · 190 条评论 · lesswrong.com · Hacker News</p>
+<p>The excerpt contains only the single letter “x” and provides no substantive information.</p>
+<p><code>#release</code></p>
+<h3 id="Windows-Loudness-Equalization-reverse-engineered-and-ported-to-PipeWire-·-讨论"><a href="#Windows-Loudness-Equalization-reverse-engineered-and-ported-to-PipeWire-·-讨论" class="headerlink" title="Windows Loudness Equalization, reverse-engineered and ported to PipeWire · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/xoxorwr/pw-loudness-eq">Windows Loudness Equalization, reverse-engineered and ported to PipeWire</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50641171">讨论</a></h3><p>304 分 · 173 条评论 · github.com · Hacker News</p>
+<p>A reverse‑engineered Windows Loudness Equalization for PipeWire evens application volumes, installable via make commands and configured in PipeWire metadata files.</p>
+<p><code>#graphics</code></p>
+<h3 id="Investigating-degraded-experiences-across-GitHub-products-·-讨论"><a href="#Investigating-degraded-experiences-across-GitHub-products-·-讨论" class="headerlink" title="Investigating degraded experiences across GitHub products · 讨论"></a><a target="_blank" rel="noopener" href="https://www.githubstatus.com/incidents/qn8mfv6q5hlx">Investigating degraded experiences across GitHub products</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50643720">讨论</a></h3><p>176 分 · 96 条评论 · githubstatus.com · Hacker News</p>
+<p>The excerpt only offers tips, technical guides and best practices twice a month via email, with no substantive content.</p>
+<p><code>#rust</code> <code>#python</code></p>
+<h3 id="I-checked-Clojure’s-core-with-Lean-and-found-unreported-bugs-·-讨论"><a href="#I-checked-Clojure’s-core-with-Lean-and-found-unreported-bugs-·-讨论" class="headerlink" title="I checked Clojure’s core with Lean and found unreported bugs · 讨论"></a><a target="_blank" rel="noopener" href="https://s.conao3.com/blog/2026/e4f733">I checked Clojure’s core with Lean and found unreported bugs</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50642939">讨论</a></h3><p>166 分 · 57 条评论 · s.conao3.com · Hacker News</p>
+<p>Using Lean 4, the author found 17 previously unreported bugs in Clojure’s core, including issues with reduce on vectors and HAMT hash collisions.</p>
+<p><code>#release</code></p>
+<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><h3 id="1Password-Security-Incident-·-讨论"><a href="#1Password-Security-Incident-·-讨论" class="headerlink" title="1Password Security Incident · 讨论"></a><a target="_blank" rel="noopener" href="https://1password.com/blog/update-on-nov-2026-security-incident">1Password Security Incident</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50644817">讨论</a></h3><p>990 分 · 419 条评论 · 1password.com · Hacker News</p>
+<p>1Password investigated a 2026 breach where an attacker accessed a corporate GitHub account, stole source code and customer metadata, but not vault contents.</p>
+<p><code>#security</code></p>
+<h3 id="Ternary-Bonsai-2-5-27B-·-讨论"><a href="#Ternary-Bonsai-2-5-27B-·-讨论" class="headerlink" title="Ternary Bonsai 2.5 27B · 讨论"></a><a target="_blank" rel="noopener" href="https://prismml.com/news/bonsai-2-5-27b">Ternary Bonsai 2.5 27B</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50633922">讨论</a></h3><p>530 分 · 176 条评论 · prismml.com · Hacker News</p>
+<p>Ternary Bonsai 2.5 27B, based on Qwen3.8 27B, improves agentic coding, tool use and reduces token usage while keeping a 5.9 GB footprint.</p>
+<p><code>#web</code></p>
+<h3 id="Bypassing-iOS-Safari’s-60-FPS-Limit-to-Build-Web-Applications-That-Feel-Native-·-讨论"><a href="#Bypassing-iOS-Safari’s-60-FPS-Limit-to-Build-Web-Applications-That-Feel-Native-·-讨论" class="headerlink" title="Bypassing iOS Safari’s 60 FPS Limit to Build Web Applications That Feel Native · 讨论"></a><a target="_blank" rel="noopener" href="https://rida.dev/blog/bypassing-ios-safari-60-fps-limit">Bypassing iOS Safari’s 60 FPS Limit to Build Web Applications That Feel Native</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50637890">讨论</a></h3><p>432 分 · 143 条评论 · rida.dev · Hacker News</p>
+<p>Safari on iOS limits requestAnimationFrame to 60 Hz unless the hidden “Prefer Page Rendering Updates near 60fps” flag is enabled, causing lower smoothness.</p>
+<p><code>#security</code></p>
+<h3 id="Heart-attack-and-stroke-risk-detectable-decades-in-advance-·-讨论"><a href="#Heart-attack-and-stroke-risk-detectable-decades-in-advance-·-讨论" class="headerlink" title="Heart attack and stroke risk detectable decades in advance · 讨论"></a><a target="_blank" rel="noopener" href="https://www.ed.ac.uk/news/heart-attack-and-stroke-risk-detectable-decades-in-advance">Heart attack and stroke risk detectable decades in advance</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50635271">讨论</a></h3><p>259 分 · 111 条评论 · ed.ac.uk · Hacker News</p>
+<p>Research shows cardiovascular risk factors can predict heart attack or stroke up to 30 years in advance, enabling early intervention.</p>
+<p><code>#security</code></p>
+<h3 id="Taking-over-US-Treasury-subdomains-for-3-each-·-讨论"><a href="#Taking-over-US-Treasury-subdomains-for-3-each-·-讨论" class="headerlink" title="Taking over US Treasury subdomains for $3 each · 讨论"></a><a target="_blank" rel="noopener" href="https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each">Taking over US Treasury subdomains for $3 each</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50638478">讨论</a></h3><p>225 分 · 48 条评论 · intruder.io · Hacker News</p>
+<p>Attackers exploited dangling AWS DNS records to take over US Treasury subdomains for about $3 each, highlighting the need to clean such records.</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Holy-shit-holy-shit-holy-shit-holy-shit-The-magnitude-of-what’s-now-happening-·-讨论"><a href="#Holy-shit-holy-shit-holy-shit-holy-shit-The-magnitude-of-what’s-now-happening-·-讨论" class="headerlink" title="Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening · 讨论"></a><a target="_blank" rel="noopener" href="https://scottaaronson.blog/?p=10379">Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50646108">讨论</a></h3><p>749 分 · 583 条评论 · scottaaronson.blog · Hacker News</p>
+<p>The author notes AI proved matrix multiplication exponent is 9&#x2F;4, matching prior upper bound, and can prove lower bounds beyond P≠NP.</p>
+<h3 id="Google-releases-Cogentic-papers-on-integer-factorization-discrete-logs-and-more-·-讨论"><a href="#Google-releases-Cogentic-papers-on-integer-factorization-discrete-logs-and-more-·-讨论" class="headerlink" title="Google releases Cogentic papers on integer factorization, discrete logs and more · 讨论"></a><a target="_blank" rel="noopener" href="https://github.com/google-research/google-research/tree/master/cogentic_research_papers">Google releases Cogentic papers on integer factorization, discrete logs and more</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50642086">讨论</a></h3><p>421 分 · 318 条评论 · github.com · Hacker News</p>
+<p>Google released Cogentic papers on integer factorization, discrete logs and more, but the excerpt contains only session messages.</p>
+<h3 id="PenGPT-A-Generative-Transformer-for-Handwriting-and-Sketches-·-讨论"><a href="#PenGPT-A-Generative-Transformer-for-Handwriting-and-Sketches-·-讨论" class="headerlink" title="PenGPT: A Generative Transformer for Handwriting and Sketches · 讨论"></a><a target="_blank" rel="noopener" href="https://greydanus.github.io/2026/11/12/pengpt/">PenGPT: A Generative Transformer for Handwriting and Sketches</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50637056">讨论</a></h3><p>386 分 · 77 条评论 · greydanus.github.io · Hacker News</p>
+<p>PenGPT is a small transformer that generates handwriting and sketches from text, with 6 M and 54 M parameter models trained on limited personal data.</p>
+<h3 id="GPT-6-models-demonstrate-intrinsic-protein-design-capabilities-·-讨论"><a href="#GPT-6-models-demonstrate-intrinsic-protein-design-capabilities-·-讨论" class="headerlink" title="GPT-6 models demonstrate intrinsic protein-design capabilities · 讨论"></a><a target="_blank" rel="noopener" href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/">GPT-6 models demonstrate intrinsic protein-design capabilities</a> · <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=50634658">讨论</a></h3><p>350 分 · 95 条评论 · openai.com · Hacker News</p>
+<p>GPT‑6 models can design protein structures and sequences using only reasoning, outperforming specialized biology models in lab tests.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ai/" rel="tag"># ai</a>
+              <a href="/tags/security/" rel="tag"># security</a>
+              <a href="/tags/infra/" rel="tag"># infra</a>
+              <a href="/tags/oss/" rel="tag"># oss</a>
+              <a href="/tags/llm/" rel="tag"># llm</a>
+              <a href="/tags/release/" rel="tag"># release</a>
+              <a href="/tags/design/" rel="tag"># design</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/rust/" rel="tag"># rust</a>
+              <a href="/tags/graphics/" rel="tag"># graphics</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/26-morning" rel="prev" title="2026-11-26 · 财经早报">
+                  <i class="fa fa-angle-left"></i> 2026-11-26 · 财经早报
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/finance/2026/11/26-evening" rel="next" title="2026-11-26 · 财经晚报">
+                  2026-11-26 · 财经晚报 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">内容版权归原作者，此处仅聚合标题与链接</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
